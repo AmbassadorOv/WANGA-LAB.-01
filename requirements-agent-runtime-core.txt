@@ -1,0 +1,3 @@
+# AI231 core runtime profile; immutable upstream commits; install only in a dedicated venv.
+langgraph @ git+https://github.com/langchain-ai/langgraph.git@08a2016953789a4f579b4d36bd1967941ec62012#subdirectory=libs/langgraph
+smolagents @ git+https://github.com/huggingface/smolagents.git@96f33faaf028479119ec8d34507b47694cf14e34
