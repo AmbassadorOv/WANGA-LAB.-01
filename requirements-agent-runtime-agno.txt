@@ -1,0 +1,1 @@
+agno @ git+https://github.com/agno-agi/agno.git@7c3b729667e66282f0d845adbd507ee07242c5eb#subdirectory=libs/agno
