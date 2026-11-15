@@ -1,0 +1,2 @@
+# Experimental: workspace package layout requires further validation before install.
+# Source pinned in agent_runtime_catalog/catalog.json; not part of the default profile.
