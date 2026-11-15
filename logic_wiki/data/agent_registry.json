@@ -223,6 +223,91 @@
         "Never publish raw private transcript",
         "Connected Wix access is separate from GitHub Actions credentials"
       ]
+    },
+    {
+      "id": "source-license-auditor",
+      "role": "AUDIT_UPSTREAM_SOURCE_AND_LICENSE",
+      "inputs": [
+        "upstream repository URL",
+        "immutable commit SHA",
+        "license file and package metadata"
+      ],
+      "outputs": [
+        "provenance record",
+        "license decision",
+        "supply-chain risk report"
+      ],
+      "constraints": [
+        "Never execute upstream code during ingestion",
+        "Unknown license means BLOCKED",
+        "Do not infer security from popularity or README claims"
+      ],
+      "status": "DRAFT",
+      "blueprint_path": "agent_blueprints/source-license-auditor.json"
+    },
+    {
+      "id": "agent-blueprint-architect",
+      "role": "COMPILE_AGENT_BLUEPRINTS",
+      "inputs": [
+        "source-backed work units",
+        "project invariants",
+        "tool permission allowlist"
+      ],
+      "outputs": [
+        "versioned agent blueprints",
+        "dependency graph",
+        "coverage gaps"
+      ],
+      "constraints": [
+        "Draft only until runtime tests pass",
+        "No invented project constants",
+        "No permission escalation"
+      ],
+      "status": "DRAFT",
+      "blueprint_path": "agent_blueprints/agent-blueprint-architect.json"
+    },
+    {
+      "id": "runtime-integration-engineer",
+      "role": "PREPARE_PINNED_AGENT_RUNTIMES",
+      "inputs": [
+        "approved runtime catalog",
+        "immutable upstream commit refs",
+        "target environment"
+      ],
+      "outputs": [
+        "isolated install profiles",
+        "dependency pins",
+        "rollback plan"
+      ],
+      "constraints": [
+        "Never install into host environment",
+        "No floating refs",
+        "A venv is not a security sandbox"
+      ],
+      "status": "DRAFT",
+      "blueprint_path": "agent_blueprints/runtime-integration-engineer.json"
+    },
+    {
+      "id": "agent-runtime-verifier",
+      "role": "VERIFY_AGENT_EXECUTION",
+      "inputs": [
+        "blueprint",
+        "runtime logs",
+        "acceptance test results",
+        "isolation evidence"
+      ],
+      "outputs": [
+        "verification report",
+        "failed checks",
+        "promotion recommendation"
+      ],
+      "constraints": [
+        "No runtime PASS without execution logs",
+        "Never self-approve",
+        "Any boundary violation blocks promotion"
+      ],
+      "status": "DRAFT",
+      "blueprint_path": "agent_blueprints/agent-runtime-verifier.json"
     }
   ]
 }
