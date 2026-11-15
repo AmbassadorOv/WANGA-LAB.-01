@@ -1,0 +1,1 @@
+google-adk @ git+https://github.com/google/adk-python.git@d05e482038bdbb226c3a1179550cf83bd8fcbefb
