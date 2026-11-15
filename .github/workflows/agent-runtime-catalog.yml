@@ -8,6 +8,7 @@ on:
       - "core/verify_contract.py"
       - "requirements-agent-runtime-*.txt"
       - "scripts/install_agent_runtime.sh"
+      - "tests/test_agent_runtime_smoke.py"
       - ".github/workflows/agent-runtime-catalog.yml"
   pull_request:
     paths:
@@ -17,6 +18,7 @@ on:
       - "core/verify_contract.py"
       - "requirements-agent-runtime-*.txt"
       - "scripts/install_agent_runtime.sh"
+      - "tests/test_agent_runtime_smoke.py"
       - ".github/workflows/agent-runtime-catalog.yml"
   workflow_dispatch:
 permissions:
@@ -33,3 +35,21 @@ jobs:
         run: python core/verify_runtime_catalog.py
       - name: Verify agent blueprints
         run: python core/verify_contract.py
+  core-runtime-install-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned core agent frameworks
+        run: |
+          python -m venv .venv-ai231
+          . .venv-ai231/bin/activate
+          python -m pip install --upgrade pip
+          python -m pip install --requirement requirements-agent-runtime-core.txt
+      - name: Run framework import and graph smoke tests
+        run: |
+          . .venv-ai231/bin/activate
+          python -m unittest tests.test_agent_runtime_smoke -v
