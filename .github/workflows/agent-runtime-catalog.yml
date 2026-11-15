@@ -3,12 +3,16 @@ on:
   push:
     paths:
       - "agent_runtime_catalog/**"
+      - "runtime/**"
+      - "benchmarks/**"
       - "agent_blueprints/**"
       - "core/verify_runtime_catalog.py"
       - "core/verify_contract.py"
       - "requirements-agent-runtime-*.txt"
       - "scripts/install_agent_runtime.sh"
       - "tests/test_agent_runtime_smoke.py"
+      - "tests/test_ai231_agent_runtime.py"
+      - "tests/test_agent_runtime_metrics.py"
       - ".github/workflows/agent-runtime-catalog.yml"
   pull_request:
     paths:
