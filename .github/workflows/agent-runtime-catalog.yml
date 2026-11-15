@@ -1,0 +1,35 @@
+name: AI231 Agent Runtime Catalog
+on:
+  push:
+    paths:
+      - "agent_runtime_catalog/**"
+      - "agent_blueprints/**"
+      - "core/verify_runtime_catalog.py"
+      - "core/verify_contract.py"
+      - "requirements-agent-runtime-*.txt"
+      - "scripts/install_agent_runtime.sh"
+      - ".github/workflows/agent-runtime-catalog.yml"
+  pull_request:
+    paths:
+      - "agent_runtime_catalog/**"
+      - "agent_blueprints/**"
+      - "core/verify_runtime_catalog.py"
+      - "core/verify_contract.py"
+      - "requirements-agent-runtime-*.txt"
+      - "scripts/install_agent_runtime.sh"
+      - ".github/workflows/agent-runtime-catalog.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify runtime catalog
+        run: python core/verify_runtime_catalog.py
+      - name: Verify agent blueprints
+        run: python core/verify_contract.py
