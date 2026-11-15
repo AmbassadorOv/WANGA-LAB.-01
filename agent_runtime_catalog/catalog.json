@@ -1,0 +1,105 @@
+{
+  "catalog_version": "1.0.0",
+  "status": "curated_pins_static_review",
+  "policy": {
+    "default_runtime_profile": "core",
+    "install_all_frameworks_by_default": false,
+    "untrusted_code_execution": "prohibited_during_ingestion",
+    "agent_network_egress": false,
+    "framework_environment_isolation": "one_virtual_environment_per_profile",
+    "floating_refs_allowed": false
+  },
+  "frameworks": [
+    {
+      "id": "langgraph",
+      "repo": "langchain-ai/langgraph",
+      "commit": "08a2016953789a4f579b4d36bd1967941ec62012",
+      "license": "MIT",
+      "package": "langgraph",
+      "package_path": "libs/langgraph",
+      "python": ">=3.10",
+      "role": "Primary stateful orchestration graph; checkpointing and durable workflows",
+      "profile": "core",
+      "review": "README, LICENSE and package pyproject inspected; no dependency resolution or runtime test performed."
+    },
+    {
+      "id": "smolagents",
+      "repo": "huggingface/smolagents",
+      "commit": "96f33faaf028479119ec8d34507b47694cf14e34",
+      "license": "Apache-2.0",
+      "package": "smolagents",
+      "package_path": ".",
+      "python": ">=3.10",
+      "role": "Small tool-using specialist agents; isolated leaf workers",
+      "profile": "core",
+      "review": "README, LICENSE and package pyproject inspected; code execution tools must remain disabled or sandboxed."
+    },
+    {
+      "id": "google-adk",
+      "repo": "google/adk-python",
+      "commit": "d05e482038bdbb226c3a1179550cf83bd8fcbefb",
+      "license": "Apache-2.0",
+      "package": "google-adk",
+      "package_path": ".",
+      "python": ">=3.11",
+      "role": "Alternative agent development/evaluation stack",
+      "profile": "optional-adk",
+      "review": "README, LICENSE and package pyproject inspected; optional separate environment."
+    },
+    {
+      "id": "microsoft-agent-framework",
+      "repo": "microsoft/agent-framework",
+      "commit": "92838b60498395142cb8b74693353163e95a0faf",
+      "license": "MIT",
+      "package": "agent-framework",
+      "package_path": "python",
+      "python": ">=3.11",
+      "role": "Alternative production agent workflow framework",
+      "profile": "optional-microsoft",
+      "review": "README, LICENSE and python package metadata inspected; optional separate environment."
+    },
+    {
+      "id": "agno",
+      "repo": "agno-agi/agno",
+      "commit": "7c3b729667e66282f0d845adbd507ee07242c5eb",
+      "license": "Apache-2.0",
+      "package": "agno",
+      "package_path": "libs/agno",
+      "python": ">=3.9,<4",
+      "role": "Alternative agent service and team runtime",
+      "profile": "optional-agno",
+      "review": "README, LICENSE and package metadata inspected; optional separate environment."
+    },
+    {
+      "id": "crewai",
+      "repo": "crewAIInc/crewAI",
+      "commit": "f4da03af1be0f61db71c8599a40c06dce98b9b48",
+      "license": "MIT",
+      "package": "crewai",
+      "package_path": "lib/crewai",
+      "python": ">=3.10,<3.14",
+      "role": "Alternative role-based multi-agent orchestration",
+      "profile": "optional-crewai",
+      "review": "README, LICENSE and repository metadata inspected; package workspace structure requires follow-up validation."
+    }
+  ],
+  "not_included": [
+    "Model weights and datasets: no weight files downloaded; model/dataset licenses and hardware requirements require independent review.",
+    "Browser-control or arbitrary-code-execution agents: excluded from default stack until isolated execution and egress controls are demonstrated.",
+    "Duplicate orchestration frameworks: optional profiles only; no parallel default install."
+  ],
+  "selection_assessment": {
+    "core": [
+      "langgraph",
+      "smolagents"
+    ],
+    "reason": "LangGraph supplies workflow/state orchestration while smolagents supplies lightweight specialist workers. This is a proposed integration pairing, not a verified runtime integration.",
+    "alternatives": [
+      "google-adk",
+      "microsoft-agent-framework",
+      "agno",
+      "crewai"
+    ],
+    "decision_rule": "Benchmark one alternative at a time against the same acceptance suite before replacing or adding a core dependency."
+  }
+}
