@@ -319,3 +319,16 @@ python -m unittest discover -s tests -p 'test_logic_package_contract.py' -v
 python -m unittest discover -s tests -p 'test_formal_package_schemas.py' -v
 python scripts/run_typed_formal_benchmark.py
 ```
+
+
+## AI231 Meta-Agent Factory and upstream runtime stack
+
+The agent factory creates specialist digital agents from source-backed work units; it does not recruit people or external agents. See:
+- [AI231 Meta-Agent Factory contract](docs/AI231_META_AGENT_FACTORY_V1.md)
+- [Upstream agent runtime integration and execution plan](docs/AI231_UPSTREAM_AGENT_RUNTIME_INTEGRATION_V1.md)
+- [Pinned runtime catalog](agent_runtime_catalog/catalog.json)
+- [Agent blueprint registry](agent_blueprints/)
+- [Bounded LangGraph executor](runtime/ai231_agent_runtime.py)
+- [Runtime benchmark cases and metrics](benchmarks/)
+
+The current core runtime profile (LangGraph + Hugging Face smolagents) has been installed in GitHub Actions from immutable commit pins and passed framework import and LangGraph graph-execution smoke tests. This verifies package installation and basic orchestration only; it does not establish production readiness, sandbox isolation, semantic quality, or integration with WANGA-X/LNL/Wix. See the [runtime CI workflow](.github/workflows/agent-runtime-catalog.yml).
