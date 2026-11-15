@@ -1,0 +1,34 @@
+name: AI231 Agent Blueprint Contract
+
+on:
+  push:
+    paths:
+      - "schemas/agent-blueprint-v1.schema.json"
+      - "agent_blueprints/**/*.json"
+      - "logic_wiki/data/agent_registry.json"
+      - "core/verify_contract.py"
+      - ".github/workflows/agent-blueprint-contract.yml"
+  pull_request:
+    paths:
+      - "schemas/agent-blueprint-v1.schema.json"
+      - "agent_blueprints/**/*.json"
+      - "logic_wiki/data/agent_registry.json"
+      - "core/verify_contract.py"
+      - ".github/workflows/agent-blueprint-contract.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-agent-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify agent blueprint contract
+        run: python core/verify_contract.py
