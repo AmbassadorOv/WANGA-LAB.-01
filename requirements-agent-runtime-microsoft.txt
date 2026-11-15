@@ -1,0 +1,1 @@
+agent-framework @ git+https://github.com/microsoft/agent-framework.git@92838b60498395142cb8b74693353163e95a0faf#subdirectory=python
