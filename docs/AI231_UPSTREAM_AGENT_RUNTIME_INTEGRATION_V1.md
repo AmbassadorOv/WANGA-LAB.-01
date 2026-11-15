@@ -70,3 +70,12 @@ No target values are asserted before a baseline is measured. Safety is a hard ga
 - No WANGA-X, LNL Model Builder, Wix, or private runtime adapter is claimed as connected.
 - No runtime acceptance benchmark has yet been executed.
 - The core profile is a selected integration candidate, not a verified production stack.
+
+
+## Executable orchestration and measurement
+- `runtime/ai231_agent_runtime.py` provides a LangGraph state machine: validate active blueprint → invoke an injected worker → verify deliverable/evidence status/acceptance-test vector → complete or require review.
+- Draft and malformed blueprints are blocked before worker invocation. Worker exceptions are recorded as errors. Failed acceptance tests produce `needs_review`, never automatic activation.
+- The graph is an orchestration layer, **not** a sandbox. The worker must run in an external isolated environment with network egress denied.
+- `benchmarks/agent_runtime_cases.json` defines initial task and security cases. `benchmarks/agent_runtime_metrics.py` computes completion, evidence precision, schema compliance, boundary violations, median/p95 latency, tokens and cost per accepted task.
+- An empty run dataset produces `NO_DATA`; no performance values are fabricated.
+- CI now installs the two pinned core frameworks in a clean Python 3.11 virtual environment, imports them, compiles and invokes a minimal LangGraph, and runs executor/metrics unit tests.
