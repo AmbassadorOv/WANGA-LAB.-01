@@ -2,6 +2,7 @@ name: AI231 Agent Runtime Catalog
 on:
   push:
     paths:
+      - "contracts/**"
       - "agent_runtime_catalog/**"
       - "runtime/**"
       - "benchmarks/**"
