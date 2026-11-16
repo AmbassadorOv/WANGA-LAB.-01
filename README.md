@@ -1,5 +1,7 @@
 # WANGA-LAB — Evidence, Logic Mining, Drift Forensics & Verification
 
+**AI231 Global Neural Governance — T15 / 500-second integration:** [Architecture and service specification](docs/GLOBAL_NEURAL_GOVERNANCE_T15_500S_INTEGRATION.md) — links WANGA evidence and logic services to the 15-second accountability workflow, 500-second sovereignty simulation, citizen services, review, and appeal. This is a development proposal; deployment and legal authority are not claimed.
+
 WANGA-LAB is the canonical research and engineering repository for **AI evidence integrity, drift forensics, provenance reconstruction, verification, and continuous logic mining**.
 
 The repository has two connected research directions:
