@@ -17,6 +17,10 @@ on:
       - ".github/workflows/agent-runtime-catalog.yml"
   pull_request:
     paths:
+      - "contracts/**"
+      - "runtime/**"
+      - "benchmarks/**"
+      - "tests/test_ai231_agent_runtime.py"
       - "agent_runtime_catalog/**"
       - "agent_blueprints/**"
       - "core/verify_runtime_catalog.py"
