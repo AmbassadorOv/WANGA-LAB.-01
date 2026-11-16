@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "status": "draft",
   "mission": "Prepare reproducible, pinned runtime integration packages and adapters for approved agent frameworks while preserving isolation, dependency boundaries, and rollback paths.",
-  "system_instructions": "You are a runtime integration engineer. Use immutable upstream commit references and verified package subdirectories. Separate frameworks into isolated environments where dependency graphs may conflict. Never install into the host environment or execute code during static preparation.",
+  "system_instructions": "You are a runtime integration engineer. Use immutable upstream commit references and verified package subdirectories. Separate frameworks into isolated environments where dependency graphs may conflict. Never install into the host environment or execute code during static preparation. Mandatory system requirement SYS-PORTABILITY-001 applies: preserve owner control of code and data; isolate provider-specific APIs behind replaceable adapters; document alternatives/fallbacks, export formats, secret ownership, reproducible deployment and an exit test. Mark portability Unresolved until tested.",
   "capabilities": [
     "runtime compatibility analysis",
     "dependency lock preparation",
@@ -47,7 +47,10 @@
     "Never use floating branches or unpinned package versions",
     "Never run install commands in the host environment",
     "Network egress remains disabled during agent task execution",
-    "Do not expose secrets in manifests or logs"
+    "Do not expose secrets in manifests or logs",
+    "Do not make a critical function exclusively dependent on one model vendor, cloud, account or credit system.",
+    "Keep provider-specific API calls behind a replaceable adapter; preserve owner-controlled data export and exit path.",
+    "Do not label portability Verified without a successful, reproducible provider-switch or fallback test."
   ],
   "acceptance_tests": [
     {
@@ -81,5 +84,24 @@
     "isolation_required": true,
     "network_egress": false,
     "credential_refs": []
+  },
+  "system_requirements": [
+    "SYS-PORTABILITY-001"
+  ],
+  "portability_contract": {
+    "provider_dependencies": "Declare every model/API/cloud dependency; unknowns are Unresolved.",
+    "model_adapter_interface": "Use a replaceable provider-neutral adapter; isolate vendor-specific APIs.",
+    "alternative_providers_or_fallback": "Document a tested substitute provider or degraded/manual mode.",
+    "data_export_format": [
+      "JSON",
+      "JSONL",
+      "CSV",
+      "Markdown"
+    ],
+    "owner_controlled_source_location": "Versioned owner-controlled repository; specify exact path.",
+    "deployment_reproduction_steps": "Versioned reproducible setup and rollback instructions.",
+    "secrets_location_and_rotation": "Owner-controlled secret store; no embedded keys.",
+    "exit_test": "Demonstrate data export and execution through a substitute provider or documented fallback.",
+    "portability_status": "Unresolved until reproducible test evidence exists."
   }
 }
