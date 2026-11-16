@@ -11,6 +11,17 @@ def blueprint(status="active"):
         "system_instructions": "Do not exceed the declared tool and task boundaries.",
         "acceptance_tests": [{"id": "a"}, {"id": "b"}, {"id": "c"}],
         "runtime": {"isolation_required": True, "network_egress": False},
+        "portability_contract": {
+            "provider_dependencies": "model provider injected by caller",
+            "model_adapter_interface": "provider-neutral worker interface",
+            "alternative_providers_or_fallback": "test stub / degraded mode",
+            "data_export_format": ["JSON"],
+            "owner_controlled_source_location": "repository/runtime",
+            "deployment_reproduction_steps": "pinned requirements and CI",
+            "secrets_location_and_rotation": "external secret store",
+            "exit_test": "replace model worker with test stub",
+            "portability_status": "Assessment",
+        },
     }
 
 
