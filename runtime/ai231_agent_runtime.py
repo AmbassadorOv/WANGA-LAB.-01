@@ -1,8 +1,9 @@
 """Bounded AI231 blueprint executor built on LangGraph.
 
-This layer orchestrates a supplied worker. It does not supply model credentials,
-grant tools, or provide a security sandbox. Execute the worker in an isolated
-runtime with network egress denied.
+SYS-PORTABILITY-001: injected workers must use provider-neutral model adapters;
+provider credentials and APIs stay outside this graph. Keep source/data exportable
+and document a tested provider exit path. This is orchestration, not a sandbox.
+Execute workers in isolated runtimes with network egress denied.
 """
 from __future__ import annotations
 
@@ -37,6 +38,13 @@ def build_agent_graph(worker: Worker):
             return {"status": "blocked", "error": "Only active blueprints may execute."}
         if len(blueprint.get("acceptance_tests", [])) < 3:
             return {"status": "blocked", "error": "At least three acceptance tests are required."}
+        portability = blueprint.get("portability_contract", {})
+        required_portability = ("provider_dependencies", "model_adapter_interface", "alternative_providers_or_fallback", "data_export_format", "owner_controlled_source_location", "deployment_reproduction_steps", "secrets_location_and_rotation", "exit_test", "portability_status")
+        missing_portability = [field for field in required_portability if not portability.get(field)]
+        if missing_portability:
+            return {"status": "blocked", "error": "SYS-PORTABILITY-001 metadata missing: " + ", ".join(missing_portability)}
+        if portability.get("portability_status") == "Verified" and not portability.get("exit_test_evidence"):
+            return {"status": "blocked", "error": "Portability cannot be Verified without exit-test evidence."}
         runtime = blueprint.get("runtime", {})
         if runtime and (runtime.get("isolation_required") is not True or runtime.get("network_egress") is not False):
             return {"status": "blocked", "error": "Runtime policy must require isolation and deny network egress."}
