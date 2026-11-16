@@ -7,7 +7,16 @@
     "untrusted_code_execution": "prohibited_during_ingestion",
     "agent_network_egress": false,
     "framework_environment_isolation": "one_virtual_environment_per_profile",
-    "floating_refs_allowed": false
+    "floating_refs_allowed": false,
+    "system_requirements": [
+      "SYS-PORTABILITY-001"
+    ],
+    "provider_neutral_model_adapter_required": true,
+    "owner_controlled_source_required": true,
+    "data_export_required": true,
+    "replaceable_inference_required": true,
+    "exit_test_required": true,
+    "single_vendor_critical_dependency_allowed": false
   },
   "frameworks": [
     {
