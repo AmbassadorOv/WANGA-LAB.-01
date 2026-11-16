@@ -79,3 +79,6 @@ No target values are asserted before a baseline is measured. Safety is a hard ga
 - `benchmarks/agent_runtime_cases.json` defines initial task and security cases. `benchmarks/agent_runtime_metrics.py` computes completion, evidence precision, schema compliance, boundary violations, median/p95 latency, tokens and cost per accepted task.
 - An empty run dataset produces `NO_DATA`; no performance values are fabricated.
 - CI now installs the two pinned core frameworks in a clean Python 3.11 virtual environment, imports them, compiles and invokes a minimal LangGraph, and runs executor/metrics unit tests.
+
+## Mandatory system requirement: portability and provider independence
+All components in this integration are governed by [SYS-PORTABILITY-001](../contracts/SYS-PORTABILITY-001.md). The model provider is a replaceable dependency, not the system owner or system of record. Agent state, task history, blueprints, configuration and evaluation records must be exportable. Provider credentials must be owner-controlled. Every critical runtime must document a tested substitute provider or degraded mode and a reproducible exit test. Current status: requirement committed; implementation coverage and provider-switch tests remain NOT YET VERIFIED.
