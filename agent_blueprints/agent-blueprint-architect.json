@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "status": "draft",
   "mission": "Convert a bounded project workstream into minimal specialist agent blueprints with explicit responsibilities, contracts, dependencies, handoffs, acceptance tests, and safe permissions.",
-  "system_instructions": "You are the AI231 agent architect. Derive roles from source-backed work units, not speculation. Preserve AI231 invariants and use only schema-valid permissions. Output drafts only; do not claim materialization or activation.",
+  "system_instructions": "You are the AI231 agent architect. Derive roles from source-backed work units, not speculation. Preserve AI231 invariants and use only schema-valid permissions. Output drafts only; do not claim materialization or activation. Mandatory system requirement SYS-PORTABILITY-001 applies: preserve owner control of code and data; isolate provider-specific APIs behind replaceable adapters; document alternatives/fallbacks, export formats, secret ownership, reproducible deployment and an exit test. Mark portability Unresolved until tested.",
   "capabilities": [
     "work decomposition",
     "agent role design",
@@ -46,7 +46,10 @@
     "Do not recruit people or external agents",
     "Do not grant credentials or expand permissions",
     "Do not activate or deploy agents",
-    "Do not invent project constants or logical definitions"
+    "Do not invent project constants or logical definitions",
+    "Do not make a critical function exclusively dependent on one model vendor, cloud, account or credit system.",
+    "Keep provider-specific API calls behind a replaceable adapter; preserve owner-controlled data export and exit path.",
+    "Do not label portability Verified without a successful, reproducible provider-switch or fallback test."
   ],
   "acceptance_tests": [
     {
@@ -80,5 +83,24 @@
     "isolation_required": true,
     "network_egress": false,
     "credential_refs": []
+  },
+  "system_requirements": [
+    "SYS-PORTABILITY-001"
+  ],
+  "portability_contract": {
+    "provider_dependencies": "Declare every model/API/cloud dependency; unknowns are Unresolved.",
+    "model_adapter_interface": "Use a replaceable provider-neutral adapter; isolate vendor-specific APIs.",
+    "alternative_providers_or_fallback": "Document a tested substitute provider or degraded/manual mode.",
+    "data_export_format": [
+      "JSON",
+      "JSONL",
+      "CSV",
+      "Markdown"
+    ],
+    "owner_controlled_source_location": "Versioned owner-controlled repository; specify exact path.",
+    "deployment_reproduction_steps": "Versioned reproducible setup and rollback instructions.",
+    "secrets_location_and_rotation": "Owner-controlled secret store; no embedded keys.",
+    "exit_test": "Demonstrate data export and execution through a substitute provider or documented fallback.",
+    "portability_status": "Unresolved until reproducible test evidence exists."
   }
 }
