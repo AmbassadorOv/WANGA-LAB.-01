@@ -1,0 +1,148 @@
+version: "0.1.0"
+project:
+  id: "ARTIFICAL_LOGICAL_ORDERS"
+  title: "ARTIFICAL LOGICAL ORDERS AND THE NEW ORDER"
+  mark: "{ĄŁF}~artifical logical"
+  formula_mark: "< °\\¹°|² /°³*[X²]÷1½=ⁿOr..... >"
+  status: "DRAFT_NOT_RUNTIME_ACTIVE"
+  contract_start_time: "2026-11-17T17:37:13+02:00"
+
+repositories:
+  agent_factory:
+    url: "https://github.com/AmbassadorOv/WANGA-LAB.-01"
+    ref: "main"
+    authority: "agent_blueprints_and_factory_policies"
+  logic_corpus:
+    url: "https://github.com/Quadruple-Multilevel-projection-project/WANGA-LAB"
+    ref: "main"
+    authority: "source_terms_chapters_and_logic_records"
+
+logic_dimensions:
+  term_count: 175
+  chapter_count: 14
+  chapter_term_cells: 2450
+  evaluation_directions:
+    - "forward"
+    - "return"
+  directional_evaluations_if_both_directions_run: 4900
+  logic_gate_count: 231
+  gate_registry_status: "SOURCE_PATH_AND_SCHEMA_PENDING_VERIFICATION"
+  excel_workbook_count: 7
+  excel_workbooks:
+    - {id: "WB-01", source_file: null, status: "UNMAPPED"}
+    - {id: "WB-02", source_file: null, status: "UNMAPPED"}
+    - {id: "WB-03", source_file: null, status: "UNMAPPED"}
+    - {id: "WB-04", source_file: null, status: "UNMAPPED"}
+    - {id: "WB-05", source_file: null, status: "UNMAPPED"}
+    - {id: "WB-06", source_file: null, status: "UNMAPPED"}
+    - {id: "WB-07", source_file: null, status: "UNMAPPED"}
+
+pipeline:
+  stages:
+    - "SOURCE_INVENTORY"
+    - "SERIAL_FORWARD"
+    - "SERIAL_RETURN"
+    - "PARALLEL_CHAPTER_WORKERS"
+    - "SERIAL_PARALLEL_COMPARISON"
+    - "DRIFT_AND_CONFLICT_AUDIT"
+    - "INDEPENDENT_VALIDATION"
+    - "DELTA_REPORT"
+    - "LOCK_GATE"
+    - "CARRY_FORWARD_N_TO_N_PLUS_1"
+  chapter_workers:
+    count: 14
+    assignment: "one_worker_per_chapter"
+    concurrency: "bounded_by_provider_quota_and_runtime_capacity"
+  term_batching:
+    strategy: "adaptive_token_budget"
+    include_only_relevant_source_excerpts: true
+    persist_intermediate_records_outside_model_context: true
+    never_load_entire_corpus_into_one_prompt: true
+
+decision_policy:
+  states:
+    LOCK:
+      carry_forward_allowed: true
+      conditions:
+        - "source_locator_present"
+        - "source_quote_or_exact_record_present"
+        - "schema_valid"
+        - "independent_validation_passed"
+        - "conflicts_resolved_or_explicitly_excluded"
+        - "explicit_carry_forward_approval"
+    ABSTAIN:
+      carry_forward_allowed: false
+      meaning: "insufficient_or_ambiguous_evidence"
+    REJECT:
+      carry_forward_allowed: false
+      meaning: "boundary_or_policy_violation"
+    BLOCKED:
+      carry_forward_allowed: false
+      meaning: "required_input_contract_schema_or_execution_evidence_missing"
+    UNRESOLVED:
+      carry_forward_allowed: false
+      meaning: "open_question_without_authoritative_resolution"
+  no_automatic_state_promotion: true
+  no_agent_may_change_another_agents_evidence_status: true
+  negative_findings_are_first_class: true
+
+token_capacity:
+  context_window_tokens: "DISCOVER_FROM_SELECTED_RUNTIME"
+  tokenizer: "DISCOVER_FROM_SELECTED_PROVIDER"
+  max_input_tokens_per_call: "CALCULATE_AT_RUNTIME"
+  reserved_output_tokens: "CONFIGURE_PER_TASK"
+  safety_margin_tokens: "CONFIGURE_PER_PROVIDER"
+  calculation: "effective_input_budget = context_window_tokens - reserved_output_tokens - safety_margin_tokens"
+  dispatch_rule: "BLOCKED_IF_EFFECTIVE_INPUT_BUDGET_IS_NOT_POSITIVE"
+  usage_logging:
+    record_input_tokens: true
+    record_output_tokens: true
+    record_model_identifier: true
+    record_provider_identifier: true
+    record_truncation: true
+    record_retry_count: true
+  overflow_policy:
+    - "split_at_record_boundaries"
+    - "preserve_source_locators"
+    - "never_truncate_evidence_silently"
+    - "persist_checkpoint_before_retry"
+    - "mark_unprocessed_work_as_PENDING"
+
+provider_portability:
+  provider_specific_calls_behind_adapter: true
+  owner_controlled_source_and_data: true
+  export_formats: ["JSON", "JSONL", "CSV", "Markdown"]
+  fallback_provider: "UNRESOLVED"
+  portability_status: "UNVERIFIED_UNTIL_EXIT_TEST"
+
+runtime_security:
+  isolated_worker_execution: true
+  network_egress: "DENY_BY_DEFAULT"
+  credentials: "OWNER_CONTROLLED_SECRET_STORE"
+  secrets_in_repository: false
+  source_repository_is_read_only_for_workers: true
+  writes_require_explicit_commit_stage: true
+
+required_verification:
+  - "schema_validation"
+  - "source_provenance_validation"
+  - "matrix_cardinality_validation"
+  - "token_budget_preflight"
+  - "serial_parallel_differential_test"
+  - "decision_state_transition_test"
+  - "carry_forward_invariant_test"
+  - "provider_fallback_exit_test"
+
+unresolved_before_runtime:
+  - "exact_paths_and_schemas_for_all_seven_workbooks"
+  - "verified_231_gate_registry_path_and_contents"
+  - "authoritative mapping of 14 chapters and term IDs"
+  - "runtime provider, model, context window and tokenizer"
+  - "execution environment and isolation implementation"
+  - "contract verifier execution and evidence"
+
+action_signature:
+  timestamp: "2026-11-17T17:38:07+02:00"
+  contract_start_time: "2026-11-17T17:37:13+02:00"
+  action_id: "ACT-20261117-173807-CREATE-PIPELINE-CONFIG"
+  sha256: "71df8e5036b1fceab44872981b30ac2e3c1763d2a65174b3e6778add136ccd5f"
