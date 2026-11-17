@@ -86,13 +86,13 @@ The SHA-256 signature is calculated over canonical UTF-8 JSON containing at mini
 | REQUEST_ORIGIN | `2026-11-17T20:25:15+00:00` | `2026-11-17T20:25:15+00:00` | RECORDED | `bac3259bf674c6aca15bbc3775839a46bec63908f6b113b2b578b0493f13afd3` |
 | MAP_RECEIVER | `2026-11-17T20:26:40+00:00` | `2026-11-17T20:25:15+00:00` | RECEIVED_BY_GITHUB_COMMIT | `f9752a8f2bbdcb9a792689f86497952c151ac464a4eda7cc21b4e6e332b8d3a7` |
 | APPROVAL_NODE | `2026-11-17T20:25:15+00:00` | `2026-11-17T20:25:15+00:00` | APPROVED_BY_EXPLICIT_USER_INSTRUCTION | `6f426ebcb040366d869b0db1972855930a2c3055e7b1a4cdbc6e3e1260810dbe` |
-| RETURN_TO_ORIGIN | `2026-11-17T20:27:00+00:00` | `2026-11-17T20:25:15+00:00` | RETURNED_TO_ORIGINAL_REQUEST_ORIGIN | `b678e13da78c84472dcddf13cb8c24b5e55aeb123d23b2a9d76d513912ac15b8` |
+| RETURN_TO_ORIGIN | `2026-11-17T20:27:35+00:00` | `2026-11-17T20:25:15+00:00` | RETURNED_TO_ORIGINAL_REQUEST_ORIGIN | `921d6faadb519e096b5f0e42e2b4447c7861c3b34e40b1062f51b1adddd3aed0` |
 
 **Request origin:** this ChatGPT conversation turn.  
 **Map receiver:** `AmbassadorOv/WANGA-LAB.-01` → `docs/ARCHITECTURE/LOGICAL_MAP_GOVERNANCE_V1.md`.  
 **Approver:** explicit user instruction in this conversation.  
 **Return destination:** the same ChatGPT conversation turn that originated the request.  
-**Action state:** all four timestamp stages have recorded signatures; repository read-back is the remaining verification step.
+**Action state:** SUCCEEDED for the GitHub logical-map write and read-back. Cross-app connectors, Google Groups, Gemini access, and live map-clock runtime remain separate UNRESOLVED implementation work.
 
 ## 5. Change propagation and audit
 
