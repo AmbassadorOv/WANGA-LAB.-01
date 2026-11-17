@@ -1,0 +1,1507 @@
+{
+  "schema_version": "1.0",
+  "count": 175,
+  "source_index": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/INDEX.md",
+  "gate_ranges": [
+    {
+      "gate": "א",
+      "gate_number": 1,
+      "first_term": 1,
+      "last_term": 4,
+      "count": 4
+    },
+    {
+      "gate": "ב",
+      "gate_number": 2,
+      "first_term": 5,
+      "last_term": 18,
+      "count": 14
+    },
+    {
+      "gate": "ג",
+      "gate_number": 3,
+      "first_term": 19,
+      "last_term": 23,
+      "count": 5
+    },
+    {
+      "gate": "ד",
+      "gate_number": 4,
+      "first_term": 24,
+      "last_term": 36,
+      "count": 13
+    },
+    {
+      "gate": "ה",
+      "gate_number": 5,
+      "first_term": 37,
+      "last_term": 40,
+      "count": 4
+    },
+    {
+      "gate": "ו",
+      "gate_number": 6,
+      "first_term": 41,
+      "last_term": 51,
+      "count": 11
+    },
+    {
+      "gate": "ז",
+      "gate_number": 7,
+      "first_term": 52,
+      "last_term": 63,
+      "count": 12
+    },
+    {
+      "gate": "ח",
+      "gate_number": 8,
+      "first_term": 64,
+      "last_term": 79,
+      "count": 16
+    },
+    {
+      "gate": "ט",
+      "gate_number": 9,
+      "first_term": 80,
+      "last_term": 89,
+      "count": 10
+    },
+    {
+      "gate": "י",
+      "gate_number": 10,
+      "first_term": 90,
+      "last_term": 107,
+      "count": 18
+    },
+    {
+      "gate": "יא",
+      "gate_number": 11,
+      "first_term": 108,
+      "last_term": 123,
+      "count": 16
+    },
+    {
+      "gate": "יב",
+      "gate_number": 12,
+      "first_term": 124,
+      "last_term": 132,
+      "count": 9
+    },
+    {
+      "gate": "יג",
+      "gate_number": 13,
+      "first_term": 133,
+      "last_term": 149,
+      "count": 17
+    },
+    {
+      "gate": "יד",
+      "gate_number": 14,
+      "first_term": 150,
+      "last_term": 175,
+      "count": 26
+    }
+  ],
+  "term_maps": [
+    {
+      "id": "T-001",
+      "number": 1,
+      "gate": "א",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/001.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-001.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-002",
+      "number": 2,
+      "gate": "א",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/002.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-002.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-003",
+      "number": 3,
+      "gate": "א",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/003.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-003.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-004",
+      "number": 4,
+      "gate": "א",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/004.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-004.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-005",
+      "number": 5,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/005.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-005.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-006",
+      "number": 6,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/006.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-006.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-007",
+      "number": 7,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/007.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-007.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-008",
+      "number": 8,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/008.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-008.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-009",
+      "number": 9,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/009.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-009.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-010",
+      "number": 10,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/010.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-010.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-011",
+      "number": 11,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/011.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-011.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-012",
+      "number": 12,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/012.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-012.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-013",
+      "number": 13,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/013.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-013.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-014",
+      "number": 14,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/014.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-014.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-015",
+      "number": 15,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/015.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-015.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-016",
+      "number": 16,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/016.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-016.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-017",
+      "number": 17,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/017.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-017.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-018",
+      "number": 18,
+      "gate": "ב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/018.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-018.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-019",
+      "number": 19,
+      "gate": "ג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/019.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-019.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-020",
+      "number": 20,
+      "gate": "ג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/020.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-020.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-021",
+      "number": 21,
+      "gate": "ג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/021.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-021.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-022",
+      "number": 22,
+      "gate": "ג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/022.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-022.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-023",
+      "number": 23,
+      "gate": "ג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/023.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-023.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-024",
+      "number": 24,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/024.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-024.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-025",
+      "number": 25,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/025.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-025.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-026",
+      "number": 26,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/026.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-026.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-027",
+      "number": 27,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/027.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-027.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-028",
+      "number": 28,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/028.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-028.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-029",
+      "number": 29,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/029.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-029.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-030",
+      "number": 30,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/030.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-030.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-031",
+      "number": 31,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/031.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-031.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-032",
+      "number": 32,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/032.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-032.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-033",
+      "number": 33,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/033.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-033.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-034",
+      "number": 34,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/034.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-034.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-035",
+      "number": 35,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/035.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-035.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-036",
+      "number": 36,
+      "gate": "ד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/036.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-036.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-037",
+      "number": 37,
+      "gate": "ה",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/037.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-037.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-038",
+      "number": 38,
+      "gate": "ה",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/038.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-038.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-039",
+      "number": 39,
+      "gate": "ה",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/039.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-039.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-040",
+      "number": 40,
+      "gate": "ה",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/040.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-040.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-041",
+      "number": 41,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/041.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-041.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-042",
+      "number": 42,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/042.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-042.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-043",
+      "number": 43,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/043.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-043.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-044",
+      "number": 44,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/044.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-044.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-045",
+      "number": 45,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/045.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-045.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-046",
+      "number": 46,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/046.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-046.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-047",
+      "number": 47,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/047.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-047.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-048",
+      "number": 48,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/048.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-048.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-049",
+      "number": 49,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/049.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-049.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-050",
+      "number": 50,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/050.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-050.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-051",
+      "number": 51,
+      "gate": "ו",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/051.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-051.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-052",
+      "number": 52,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/052.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-052.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-053",
+      "number": 53,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/053.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-053.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-054",
+      "number": 54,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/054.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-054.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-055",
+      "number": 55,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/055.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-055.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-056",
+      "number": 56,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/056.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-056.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-057",
+      "number": 57,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/057.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-057.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-058",
+      "number": 58,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/058.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-058.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-059",
+      "number": 59,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/059.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-059.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-060",
+      "number": 60,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/060.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-060.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-061",
+      "number": 61,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/061.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-061.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-062",
+      "number": 62,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/062.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-062.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-063",
+      "number": 63,
+      "gate": "ז",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/063.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-063.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-064",
+      "number": 64,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/064.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-064.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-065",
+      "number": 65,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/065.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-065.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-066",
+      "number": 66,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/066.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-066.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-067",
+      "number": 67,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/067.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-067.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-068",
+      "number": 68,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/068.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-068.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-069",
+      "number": 69,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/069.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-069.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-070",
+      "number": 70,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/070.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-070.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-071",
+      "number": 71,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/071.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-071.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-072",
+      "number": 72,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/072.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-072.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-073",
+      "number": 73,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/073.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-073.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-074",
+      "number": 74,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/074.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-074.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-075",
+      "number": 75,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/075.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-075.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-076",
+      "number": 76,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/076.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-076.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-077",
+      "number": 77,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/077.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-077.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-078",
+      "number": 78,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/078.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-078.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-079",
+      "number": 79,
+      "gate": "ח",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/079.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-079.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-080",
+      "number": 80,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/080.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-080.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-081",
+      "number": 81,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/081.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-081.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-082",
+      "number": 82,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/082.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-082.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-083",
+      "number": 83,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/083.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-083.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-084",
+      "number": 84,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/084.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-084.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-085",
+      "number": 85,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/085.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-085.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-086",
+      "number": 86,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/086.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-086.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-087",
+      "number": 87,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/087.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-087.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-088",
+      "number": 88,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/088.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-088.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-089",
+      "number": 89,
+      "gate": "ט",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/089.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-089.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-090",
+      "number": 90,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/090.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-090.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-091",
+      "number": 91,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/091.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-091.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-092",
+      "number": 92,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/092.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-092.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-093",
+      "number": 93,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/093.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-093.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-094",
+      "number": 94,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/094.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-094.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-095",
+      "number": 95,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/095.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-095.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-096",
+      "number": 96,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/096.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-096.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-097",
+      "number": 97,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/097.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-097.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-098",
+      "number": 98,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/098.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-098.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-099",
+      "number": 99,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/099.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-099.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-100",
+      "number": 100,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/100.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-100.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-101",
+      "number": 101,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/101.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-101.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-102",
+      "number": 102,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/102.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-102.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-103",
+      "number": 103,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/103.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-103.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-104",
+      "number": 104,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/104.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-104.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-105",
+      "number": 105,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/105.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-105.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-106",
+      "number": 106,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/106.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-106.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-107",
+      "number": 107,
+      "gate": "י",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/107.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-107.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-108",
+      "number": 108,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/108.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-108.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-109",
+      "number": 109,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/109.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-109.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-110",
+      "number": 110,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/110.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-110.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-111",
+      "number": 111,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/111.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-111.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-112",
+      "number": 112,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/112.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-112.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-113",
+      "number": 113,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/113.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-113.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-114",
+      "number": 114,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/114.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-114.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-115",
+      "number": 115,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/115.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-115.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-116",
+      "number": 116,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/116.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-116.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-117",
+      "number": 117,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/117.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-117.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-118",
+      "number": 118,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/118.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-118.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-119",
+      "number": 119,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/119.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-119.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-120",
+      "number": 120,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/120.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-120.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-121",
+      "number": 121,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/121.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-121.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-122",
+      "number": 122,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/122.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-122.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-123",
+      "number": 123,
+      "gate": "יא",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/123.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-123.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-124",
+      "number": 124,
+      "gate": "יב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/124.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-124.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-125",
+      "number": 125,
+      "gate": "יב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/125.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-125.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-126",
+      "number": 126,
+      "gate": "יב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/126.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-126.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-127",
+      "number": 127,
+      "gate": "יב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/127.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-127.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-128",
+      "number": 128,
+      "gate": "יב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/128.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-128.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-129",
+      "number": 129,
+      "gate": "יב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/129.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-129.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-130",
+      "number": 130,
+      "gate": "יב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/130.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-130.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-131",
+      "number": 131,
+      "gate": "יב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/131.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-131.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-132",
+      "number": 132,
+      "gate": "יב",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/132.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-132.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-133",
+      "number": 133,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/133.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-133.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-134",
+      "number": 134,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/134.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-134.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-135",
+      "number": 135,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/135.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-135.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-136",
+      "number": 136,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/136.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-136.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-137",
+      "number": 137,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/137.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-137.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-138",
+      "number": 138,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/138.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-138.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-139",
+      "number": 139,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/139.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-139.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-140",
+      "number": 140,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/140.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-140.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-141",
+      "number": 141,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/141.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-141.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-142",
+      "number": 142,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/142.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-142.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-143",
+      "number": 143,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/143.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-143.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-144",
+      "number": 144,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/144.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-144.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-145",
+      "number": 145,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/145.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-145.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-146",
+      "number": 146,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/146.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-146.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-147",
+      "number": 147,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/147.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-147.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-148",
+      "number": 148,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/148.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-148.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-149",
+      "number": 149,
+      "gate": "יג",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/149.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-149.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-150",
+      "number": 150,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/150.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-150.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-151",
+      "number": 151,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/151.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-151.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-152",
+      "number": 152,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/152.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-152.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-153",
+      "number": 153,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/153.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-153.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-154",
+      "number": 154,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/154.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-154.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-155",
+      "number": 155,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/155.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-155.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-156",
+      "number": 156,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/156.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-156.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-157",
+      "number": 157,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/157.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-157.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-158",
+      "number": 158,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/158.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-158.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-159",
+      "number": 159,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/159.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-159.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-160",
+      "number": 160,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/160.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-160.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-161",
+      "number": 161,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/161.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-161.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-162",
+      "number": 162,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/162.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-162.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-163",
+      "number": 163,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/163.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-163.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-164",
+      "number": 164,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/164.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-164.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-165",
+      "number": 165,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/165.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-165.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-166",
+      "number": 166,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/166.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-166.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-167",
+      "number": 167,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/167.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-167.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-168",
+      "number": 168,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/168.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-168.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-169",
+      "number": 169,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/169.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-169.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-170",
+      "number": 170,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/170.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-170.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-171",
+      "number": 171,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/171.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-171.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-172",
+      "number": 172,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/172.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-172.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-173",
+      "number": 173,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/173.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-173.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-174",
+      "number": 174,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/174.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-174.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    },
+    {
+      "id": "T-175",
+      "number": 175,
+      "gate": "יד",
+      "source_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/terms/175.md",
+      "map_url": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/architecture-mapping-to-thinking/TERM-MAPS/T-175.md",
+      "status": "SHELL_CREATED_SOURCE_EXTRACTION_PENDING"
+    }
+  ]
+}
