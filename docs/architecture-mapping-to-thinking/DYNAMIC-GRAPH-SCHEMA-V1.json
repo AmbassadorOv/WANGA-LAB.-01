@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0.0",
+  "title": "Architecture Mapping to Thinking — Dynamic Graph Schema",
+  "status": "INITIAL_SCHEMA_PROPOSAL",
+  "principle": "The graph is versioned and dynamic. Projections never replace source evidence.",
+  "evidence_status": [
+    "SOURCE_OBSERVED",
+    "DERIVED",
+    "HYPOTHESIS",
+    "UNRESOLVED",
+    "REJECTED"
+  ],
+  "entities": {
+    "required": ["id", "entity_type", "label", "status", "created_at", "updated_at"],
+    "fields": {
+      "id": "stable identifier",
+      "entity_type": "source|repository|file|chapter|term|concept|agent|service|engine|diagram|paradigm|artifact|claim|test",
+      "label": "display label; mutable without changing id",
+      "definition": "source-faithful definition or null",
+      "source_refs": "array of source reference objects",
+      "occurrences": "array of occurrence objects",
+      "roles": "contextual role assignments; never assumed globally",
+      "status": "evidence status",
+      "version": "entity version",
+      "created_at": "ISO-8601 timestamp",
+      "updated_at": "ISO-8601 timestamp",
+      "supersedes": "optional prior entity/version reference"
+    }
+  },
+  "relations": {
+    "required": ["id", "from", "to", "relation_type", "context", "evidence_status", "source_refs", "version"],
+    "relation_types": [
+      "contains",
+      "is_a",
+      "part_of",
+      "distinguishes",
+      "has_property",
+      "has_accident",
+      "defines",
+      "describes",
+      "depends_on",
+      "implements",
+      "uses",
+      "transforms",
+      "produces",
+      "validates",
+      "derived_from",
+      "analogous_to",
+      "contradicts",
+      "co_occurs_with",
+      "version_of",
+      "projects_as"
+    ],
+    "constraints": [
+      "A relation is contextual and may not be generalized beyond its evidence.",
+      "Analogous_to does not mean identical_to.",
+      "A shared label does not establish entity identity.",
+      "Directionality must be explicit where the relation is asymmetric."
+    ]
+  },
+  "source_refs": {
+    "required": ["source_id", "uri"],
+    "fields": {
+      "source_id": "stable source identifier",
+      "uri": "repository, file, document, or board URL",
+      "repository": "owner/name when applicable",
+      "path": "repository-relative path when applicable",
+      "ref": "branch, tag, or commit",
+      "line_start": "optional 1-based line",
+      "line_end": "optional 1-based line",
+      "quote_or_excerpt": "short source excerpt when permitted",
+      "edition": "edition/version identifier",
+      "retrieved_at": "ISO-8601 timestamp"
+    }
+  },
+  "occurrences": {
+    "fields": {
+      "occurrence_id": "stable occurrence identifier",
+      "entity_id": "referenced entity",
+      "source_ref": "source reference",
+      "chapter_id": "chapter or gate identifier",
+      "local_context": "surrounding context",
+      "role_in_context": "role supported in this occurrence",
+      "evidence_status": "evidence status"
+    }
+  },
+  "transformations": {
+    "required": ["id", "pattern", "input_graph_version", "operation", "output_graph_version", "actor", "timestamp", "validation"],
+    "patterns": ["SPIRAL", "VORTEX", "EXTRACTION", "RECLASSIFICATION", "PROJECTION", "RECONCILIATION"],
+    "fields": {
+      "id": "stable transformation ID",
+      "pattern": "transformation family",
+      "input_graph_version": "source graph version",
+      "operation": "explicit operation and parameters",
+      "output_graph_version": "result graph version",
+      "actor": "human or agent identifier",
+      "timestamp": "ISO-8601 timestamp",
+      "evidence": "supporting source refs",
+      "validation": "PASS|FAIL|REVIEW|NOT_RUN",
+      "affected_entities": "IDs changed or re-evaluated",
+      "unresolved": "open questions and competing branches"
+    }
+  },
+  "paradigm_projections": {
+    "required": ["id", "paradigm", "graph_version", "ruleset_version"],
+    "paradigms": [
+      "TAXONOMIC",
+      "NETWORK",
+      "DEPENDENCY",
+      "TEMPORAL",
+      "CAUSAL",
+      "COMPOSITIONAL",
+      "ANALOGICAL",
+      "TOPOLOGICAL",
+      "META_STRUCTURAL"
+    ],
+    "rule": "Every projection declares its semantics and is reproducible from a graph version and ruleset."
+  },
+  "events": {
+    "event_types": [
+      "SOURCE_ADDED",
+      "SOURCE_CHANGED",
+      "ENTITY_EXTRACTED",
+      "RELATION_PROPOSED",
+      "RELATION_VERIFIED",
+      "CONTRADICTION_FOUND",
+      "TRANSFORMATION_STARTED",
+      "TRANSFORMATION_COMPLETED",
+      "VALIDATION_FAILED",
+      "PROJECTION_INVALIDATED",
+      "PROJECTION_REBUILT"
+    ],
+    "rule": "Events trigger dependency analysis; only affected derived artifacts are invalidated."
+  },
+  "validation_rules": [
+    "No VERIFIED status without a source reference and reviewable evidence.",
+    "No semantic relation inferred solely from a repository or file name.",
+    "No term role generalized across occurrences without evidence.",
+    "No projection overwrites source text or source identity.",
+    "No hypothesis is silently promoted to a source fact.",
+    "All transformations preserve input and output graph versions.",
+    "All generated diagrams link back to their graph entities and source references."
+  ],
+  "execution_record": {
+    "Timestamp": "2026-11-18T00:38:00+02:00",
+    "Contract_Start_Time": "2026-11-17T20:12:00+02:00",
+    "Action_ID": "GH_CREATE_FILE_DYNAMIC_GRAPH_SCHEMA_V1",
+    "SHA256": "b24e4d3a0a0a9c9ba8211d34e7cd9fd72bf37b7f692c6f06fd26fad8aba9949d"
+  }
+}
