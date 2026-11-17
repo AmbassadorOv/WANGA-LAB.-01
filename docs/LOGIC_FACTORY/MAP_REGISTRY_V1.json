@@ -1,0 +1,107 @@
+{
+  "registry_id": "WANGA-MAP-REGISTRY",
+  "schema_version": "1.0.0",
+  "registry_version": 1,
+  "logical_map_clock": 0,
+  "status": "INITIAL_SEED_NOT_RUNTIME_VERIFIED",
+  "observed_at": "2026-11-18T01:32:00+02:00",
+  "repository": "AmbassadorOv/WANGA-LAB.-01",
+  "artifacts": [
+    {
+      "artifact_id": "MAP-ATLAS-MASTER-V1",
+      "artifact_type": "MAP",
+      "canonical_uri": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/LOGIC_CORPUS_MAP_ATLAS_V1.md",
+      "repository": "AmbassadorOv/WANGA-LAB.-01",
+      "path": "docs/LOGIC_CORPUS_MAP_ATLAS_V1.md",
+      "revision": {
+        "git_blob_sha": "aee5843a03db585ba641837e622326a3d2bfe63c"
+      },
+      "content_sha256": null,
+      "observed_at": "2026-11-18T01:32:00+02:00",
+      "evidence_status": "UNRESOLVED",
+      "operational_status": "NOT_RUNTIME_VERIFIED",
+      "depends_on": [],
+      "change_policy": "MANUAL_REVIEW",
+      "notes": "Atlas explicitly identifies itself as specified/not yet verified."
+    },
+    {
+      "artifact_id": "TERMS-175-INDEX-V1",
+      "artifact_type": "TERM_INDEX",
+      "canonical_uri": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/INDEX.md",
+      "repository": "AmbassadorOv/WANGA-LAB.-01",
+      "path": "milaot-hahigayon/INDEX.md",
+      "revision": {
+        "git_blob_sha": "13181dec6d077a15883a5f4bae01237d58e61cc4"
+      },
+      "content_sha256": null,
+      "observed_at": "2026-11-18T01:32:00+02:00",
+      "evidence_status": "DERIVED",
+      "operational_status": "NOT_RUNTIME_VERIFIED",
+      "depends_on": [],
+      "change_policy": "MANUAL_REVIEW",
+      "notes": "Index declares 175 numbered records grouped across 14 gates."
+    },
+    {
+      "artifact_id": "TERMS-175-ORCHESTRATOR-V1",
+      "artifact_type": "PIPELINE",
+      "canonical_uri": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/ORCHESTRATOR.md",
+      "repository": "AmbassadorOv/WANGA-LAB.-01",
+      "path": "milaot-hahigayon/ORCHESTRATOR.md",
+      "revision": {
+        "git_blob_sha": "c5d3aaacda600f61b20d3f693bd6afc2c46dbf66"
+      },
+      "content_sha256": null,
+      "observed_at": "2026-11-18T01:32:00+02:00",
+      "evidence_status": "HYPOTHESIS",
+      "operational_status": "NOT_RUNTIME_VERIFIED",
+      "depends_on": [
+        "TERMS-175-INDEX-V1"
+      ],
+      "change_policy": "MANUAL_REVIEW",
+      "notes": "Routing rules and evidence statuses are specified in documentation; runtime behavior not demonstrated."
+    },
+    {
+      "artifact_id": "LOGIC-PIPELINE-FUTURE-V1",
+      "artifact_type": "PIPELINE",
+      "canonical_uri": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/RESEARCH/FUTURE_LOGIC_ARCHITECTURE_PIPELINE.md",
+      "repository": "AmbassadorOv/WANGA-LAB.-01",
+      "path": "docs/RESEARCH/FUTURE_LOGIC_ARCHITECTURE_PIPELINE.md",
+      "revision": {
+        "git_blob_sha": "b14763ce693687d211600e94ce9e7ea94861d26f"
+      },
+      "content_sha256": null,
+      "observed_at": "2026-11-18T01:32:00+02:00",
+      "evidence_status": "HYPOTHESIS",
+      "operational_status": "NOT_RUNTIME_VERIFIED",
+      "depends_on": [],
+      "change_policy": "MANUAL_REVIEW",
+      "notes": "Research pipeline is explicitly forward-looking and not a conventional implementation pipeline."
+    },
+    {
+      "artifact_id": "GATES-231-DATA-V1",
+      "artifact_type": "GATE_DATA",
+      "canonical_uri": "https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/research/data/LOGIC_CORPUS_PAGES_GATES_V1.json",
+      "repository": "AmbassadorOv/WANGA-LAB.-01",
+      "path": "research/data/LOGIC_CORPUS_PAGES_GATES_V1.json",
+      "revision": {
+        "git_blob_sha": "fd34c52b3cbef09a82125c2f73b4e357ab45a771"
+      },
+      "content_sha256": null,
+      "observed_at": "2026-11-18T01:32:00+02:00",
+      "evidence_status": "UNRESOLVED",
+      "operational_status": "NOT_RUNTIME_VERIFIED",
+      "depends_on": [
+        "MAP-ATLAS-MASTER-V1"
+      ],
+      "change_policy": "MANUAL_REVIEW",
+      "notes": "Gate entries are page specifications with NOT_YET_VERIFIED evidence; pair enumeration does not assign semantics."
+    }
+  ],
+  "change_log": [],
+  "invariants": [
+    "Git blob SHA is distinct from SHA-256 content hash.",
+    "Registry presence does not imply semantic verification or runtime connectivity.",
+    "Changed dependencies propagate STALE to transitive dependents.",
+    "LOCK fails closed when required evidence is missing or stale."
+  ]
+}
