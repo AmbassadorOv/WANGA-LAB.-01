@@ -1,0 +1,170 @@
+version: "0.1.0"
+project_id: "ARTIFICAL_LOGICAL_ORDERS"
+factory_repository: "AmbassadorOv/WANGA-LAB.-01"
+branch: "integration/alf-logical-orders-20261117"
+status: "PROPOSED_ROUTING_NOT_ACTIVATED"
+
+existing_factory_roles:
+  OR-01:
+    role: "orchestrator"
+    use: "schedule bounded tasks, enforce dependencies, collect status"
+  VIT-SOURCE:
+    role: "primary_source_extractor"
+    use: "extract source text, quotations, chapter boundaries and negative findings"
+  RAMBAM-SOURCE:
+    role: "primary_source_extractor"
+    use: "extract source corpus records and locators"
+  FORMALIZER:
+    role: "logic_formalization"
+    use: "derive formal candidates only from source-grounded records"
+  CROSS-CORPUS:
+    role: "structural_comparison"
+    use: "compare representations; similarity is never proof"
+  CLAIM-FORENSIC:
+    role: "bounded_claim_audit"
+    use: "audit only explicitly registered claims"
+  DELTA-REPORTER:
+    role: "delta_reporting"
+    use: "report new findings, contradictions, negative findings and open gaps"
+
+project_specific_roles:
+  TERM-175:
+    status: "PROPOSED"
+    responsibility: "maintain immutable IDs and source links for the 175-term registry"
+    input: ["verified_term_source", "term_index"]
+    output: ["term_registry_snapshot", "coverage_gaps"]
+  SER-01:
+    status: "PROPOSED"
+    responsibility: "execute the 14-chapter forward and return passes in a deterministic order"
+    input: ["chapter_registry", "term_registry_snapshot", "source_records"]
+    output: ["serial_extraction_records", "serial_checkpoint"]
+  PAR-01:
+    status: "PROPOSED"
+    chapter_assignment: "CH-01"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-02:
+    status: "PROPOSED"
+    chapter_assignment: "CH-02"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-03:
+    status: "PROPOSED"
+    chapter_assignment: "CH-03"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-04:
+    status: "PROPOSED"
+    chapter_assignment: "CH-04"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-05:
+    status: "PROPOSED"
+    chapter_assignment: "CH-05"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-06:
+    status: "PROPOSED"
+    chapter_assignment: "CH-06"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-07:
+    status: "PROPOSED"
+    chapter_assignment: "CH-07"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-08:
+    status: "PROPOSED"
+    chapter_assignment: "CH-08"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-09:
+    status: "PROPOSED"
+    chapter_assignment: "CH-09"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-10:
+    status: "PROPOSED"
+    chapter_assignment: "CH-10"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-11:
+    status: "PROPOSED"
+    chapter_assignment: "CH-11"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-12:
+    status: "PROPOSED"
+    chapter_assignment: "CH-12"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-13:
+    status: "PROPOSED"
+    chapter_assignment: "CH-13"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  PAR-14:
+    status: "PROPOSED"
+    chapter_assignment: "CH-14"
+    responsibility: "evaluate assigned chapter against bounded term batches"
+  CMP-01:
+    status: "PROPOSED"
+    responsibility: "compare serial and parallel outputs without majority-vote promotion"
+  DRIFT-01:
+    status: "PROPOSED"
+    responsibility: "detect missing records, duplicates, term drift, chapter drift and contradictions"
+  VAL-01:
+    status: "PROPOSED"
+    responsibility: "independently validate schemas, provenance, decision transitions and test evidence"
+  DELTA-01:
+    status: "PROPOSED"
+    responsibility: "project wrapper for DELTA-REPORTER; do not duplicate its authority"
+
+routing:
+  - from: "VIT-SOURCE"
+    to: ["TERM-175", "SER-01", "PAR-01", "PAR-02", "PAR-03", "PAR-04", "PAR-05", "PAR-06", "PAR-07", "PAR-08", "PAR-09", "PAR-10", "PAR-11", "PAR-12", "PAR-13", "PAR-14"]
+  - from: "RAMBAM-SOURCE"
+    to: ["TERM-175", "SER-01"]
+  - from: "TERM-175"
+    to: ["SER-01", "PAR-01", "PAR-02", "PAR-03", "PAR-04", "PAR-05", "PAR-06", "PAR-07", "PAR-08", "PAR-09", "PAR-10", "PAR-11", "PAR-12", "PAR-13", "PAR-14"]
+  - from: "SER-01"
+    to: ["CMP-01"]
+  - from: "PAR-01"
+    to: ["CMP-01"]
+  - from: "PAR-02"
+    to: ["CMP-01"]
+  - from: "PAR-03"
+    to: ["CMP-01"]
+  - from: "PAR-04"
+    to: ["CMP-01"]
+  - from: "PAR-05"
+    to: ["CMP-01"]
+  - from: "PAR-06"
+    to: ["CMP-01"]
+  - from: "PAR-07"
+    to: ["CMP-01"]
+  - from: "PAR-08"
+    to: ["CMP-01"]
+  - from: "PAR-09"
+    to: ["CMP-01"]
+  - from: "PAR-10"
+    to: ["CMP-01"]
+  - from: "PAR-11"
+    to: ["CMP-01"]
+  - from: "PAR-12"
+    to: ["CMP-01"]
+  - from: "PAR-13"
+    to: ["CMP-01"]
+  - from: "PAR-14"
+    to: ["CMP-01"]
+  - from: "CMP-01"
+    to: ["DRIFT-01", "VAL-01"]
+  - from: "DRIFT-01"
+    to: ["VAL-01", "DELTA-REPORTER"]
+  - from: "VAL-01"
+    to: ["OR-01", "DELTA-REPORTER"]
+  - from: "DELTA-REPORTER"
+    to: ["OR-01"]
+
+global_guards:
+  - "No agent may change another agent's evidence status."
+  - "Every output must carry source_agent and evidence_chain."
+  - "Negative findings are first-class outcomes."
+  - "No ACTIVE or LOCK without complete evidence chain."
+  - "No source wording or term identifier may be silently rewritten."
+  - "No agent may invent weights, operators, source locators or constants."
+  - "Parallel disagreement is recorded as conflict; never resolved by majority vote."
+  - "No runtime activation until independent verifier approves the runtime evidence."
+
+action_signature:
+  timestamp: "2026-11-17T17:38:21+02:00"
+  contract_start_time: "2026-11-17T17:37:13+02:00"
+  action_id: "ACT-20261117-173821-CREATE-AGENT-ROUTING"
+  sha256: "9b795fa1cf9032e8d859f084d48e79e73e978a5e7c6eb7918c4526a7f91d5341"
