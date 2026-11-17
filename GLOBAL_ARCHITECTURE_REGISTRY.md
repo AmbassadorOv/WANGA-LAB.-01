@@ -1,7 +1,7 @@
 # WANGA-LAB — Canonical Global Architecture Registry
 
 Status: ARCHITECTURE BASELINE
-Version: 0.2.1
+Version: 0.2.2
 
 ## Purpose
 
@@ -144,6 +144,7 @@ GLOBAL SCIENCE NETWORK
 | WANGA Lineage Tree | `docs/ARCHITECTURE/WANGA_LINEAGE_TREE.md` | EXISTING | K Lineage Knowledge & Governance |
 | WANGA Politeia | `docs/ARCHITECTURE/WANGA_POLITEIA.md` | BUILDING | K Lineage Knowledge & Governance |
 | Vitruvius Orchestrator | `docs/ARCHITECTURE/VITRUVIUS_ORCHESTRATOR_ARCHITECTURE.md`, `docs/ARCHITECTURE/VITRUVIUS_ORCHESTRATOR_ARCHITECTURE.ASCII.txt` | SPECIFICATION | M Meta-Architecture / Vitruvius |
+| Logical Map Governance | `docs/ARCHITECTURE/LOGICAL_MAP_GOVERNANCE_V1.md` | SPECIFIED / IMPLEMENTATION NOT YET VERIFIED | K Lineage Knowledge & Governance; interface to D Research Execution Fabric |
 
 ## Existing research-domain architectures
 
@@ -244,3 +245,19 @@ The first UI prototype for the Vitruvius meta-architecture is located at:
 `apps/vitruvius-architect/`
 
 It presents lineage trees, architecture families, WANGA Politeia, model selection, the Rational Logic boundary, architecture components, and provenance state. It is a PROTOTYPED artifact and is not yet runtime-verified.
+
+
+## Mandatory logical-map admission and synchronization
+
+The canonical specification is `docs/ARCHITECTURE/LOGICAL_MAP_GOVERNANCE_V1.md`.
+
+Every new structure, agent group, application connection, workflow, registry, service, or architecture component must be admitted into the canonical logical map with its parent, dependencies, source references, interfaces, status, and provenance. A new structure without a map node is not admitted.
+
+The logical map and its time mechanism are distinct:
+- **מפה לוגית** contains repositories, Excel files, applications, markers, relations, links, and references.
+- **שעון מפה לוגית** synchronizes component states according to map/link changes.
+- **כל הריפרים כפופים למפות**: references derive position and validity from the map.
+
+The four-point timestamp handshake is mandatory for every action: REQUEST_ORIGIN → MAP_RECEIVER → APPROVAL_NODE → RETURN_TO_ORIGIN. All four records carry the same immutable Contract_Start_Time and Action_ID; each stage records its own actual ISO 8601 Timestamp and SHA-256 signature. Missing/invalid signatures are BLOCKED, not completed log entries. Pending transitions must remain pending rather than receive invented timestamps.
+
+The AI231 Logic Operations collaboration node is registered under D (execution/routing) and K (map governance). GitHub remains the technical source of truth. Notion, Figma, Airtable, Gmail, and Gemini are distinct integration surfaces; availability of a connector does not prove that a target account or resource is linked. Gmail labels are not Google Groups, and Gemini integration remains UNRESOLVED until independently connected and tested.
