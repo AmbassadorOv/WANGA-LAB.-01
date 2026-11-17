@@ -128,3 +128,25 @@ After every GitHub mutation:
 5. record unresolved conflicts.
 
 This contract is a governance baseline, not proof that every existing repository component already conforms to it.
+
+
+## 12. Mandatory logical-map admission and four-point handshake
+
+No new structure may be created, promoted, or treated as part of WANGA architecture until it has an exact node in the canonical logical map. This applies to agent groups, application links, workflows, registries, services, and architecture components.
+
+The map entry must identify the node, parent, dependencies, source path/ref, purpose, interfaces, status, provenance, and validation state. Do not create a duplicate map when an existing canonical map owns the responsibility.
+
+The following invariants are mandatory:
+- **מפה לוגית** is the structure of repositories, Excel files, apps, markers, relations, links, and references.
+- **שעון מפה לוגית** synchronizes component states according to changes in the map and its links.
+- **כל הריפרים כפופים למפות**; reference position and validity derive from the logical map.
+- A map change updates dependent instructions and relations.
+- A component change updates the map while preserving source and change history.
+
+Every action must be recorded through four locations in order:
+1. REQUEST_ORIGIN — exact source of the request and start timestamp.
+2. MAP_RECEIVER — exact map node/ref receiving the start link and receipt timestamp.
+3. APPROVAL_NODE — approver, decision, and approval timestamp.
+4. RETURN_TO_ORIGIN — result/evidence returned to the same origin that sent the request, with return timestamp.
+
+Each stage must carry an ISO 8601 `Timestamp`, the same immutable `Contract_Start_Time`, the same unique `Action_ID`, a stage identifier, status, source/target references, and a SHA-256 signature. The signature input must include at minimum Timestamp, Contract_Start_Time, and Action_ID. Missing or invalid signature means `BLOCKED`; do not enter the stage as a completed log event. Never fabricate timestamps for stages that have not occurred. The action is `SUCCEEDED` only after all four stages are signed and the map result has been fetched and checked.
