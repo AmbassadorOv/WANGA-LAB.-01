@@ -106,7 +106,6 @@ The SHA-256 signature is calculated over canonical UTF-8 JSON containing at mini
 
 This document defines the required architecture and audit protocol. It does not assert that a live logical-map clock, cross-app synchronization service, Google Groups, or Gemini connection is already running. Those require separate implementation and verification evidence.
 
-
 ## 7. Standing user authorization for today's activity
 
 The user explicitly authorizes the assistant to continue routine execution within the existing WANGA logical-map activity without requesting repeated per-action approval, until the user explicitly states that today's activity has ended. This standing authorization does not waive evidence requirements, integrity checks, safety boundaries, or the requirement to distinguish completed work from pending work. It does not authorize unrelated scope expansion or fabricated results.
@@ -118,3 +117,17 @@ The user explicitly authorizes the assistant to continue routine execution withi
 - Stage_ID: `APPROVAL_SCOPE_EXTENSION`
 - Status: `USER_AUTHORIZED_UNTIL_EXPLICIT_END_OF_TODAYS_ACTIVITY`
 - SHA-256: `b33d8f47071299f814c9c4af035179360d35afe9696ca5251748143dfeea4f49`
+
+## 8. Logic Map Factory admission
+
+**Node ID:** `WANGA-LOGIC-MAP-FACTORY-001`  
+**Plugin ID:** `plugins_6afccd9edaf88191823ba5181aef89bc`  
+**Plugin release:** `pluginrel_6afccda05618819186f9d36654bd3c92`  
+**Canonical integration specification:** `docs/ARCHITECTURE/LOGIC_MAP_FACTORY_INTEGRATION_V1.md`  
+**Parent:** K — Lineage Knowledge & Governance  
+**Execution interface:** D — Research Execution Fabric  
+**Status:** PLUGIN CREATED / MAP REGISTERED / RUNTIME NOT CONNECTED
+
+The plugin generates source-grounded 13-stage Mermaid map sequences, workbook inventories, typed Propagated Logic rules, XL-Link registers, provenance records, and validation reports. It must keep layout-only Mermaid connectors separate from semantic XL Links and must not promote MAPPED or DERIVED data to VERIFIED.
+
+The plugin is a map-authoring interface, not the logic processor runtime. It does not prove that workbook adapters, the map clock, simulator, training loop, or Reshimu verifier are running. Factory admission remains subject to the source workbook checks, the agent operating contract, and the configured verification gate.
