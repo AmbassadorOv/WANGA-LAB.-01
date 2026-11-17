@@ -105,3 +105,16 @@ The SHA-256 signature is calculated over canonical UTF-8 JSON containing at mini
 ## 6. Implementation boundary
 
 This document defines the required architecture and audit protocol. It does not assert that a live logical-map clock, cross-app synchronization service, Google Groups, or Gemini connection is already running. Those require separate implementation and verification evidence.
+
+
+## 7. Standing user authorization for today's activity
+
+The user explicitly authorizes the assistant to continue routine execution within the existing WANGA logical-map activity without requesting repeated per-action approval, until the user explicitly states that today's activity has ended. This standing authorization does not waive evidence requirements, integrity checks, safety boundaries, or the requirement to distinguish completed work from pending work. It does not authorize unrelated scope expansion or fabricated results.
+
+**Authorization record**
+- Timestamp: `2026-11-17T23:44:00+02:00`
+- Contract_Start_Time: `2026-11-17T20:25:15+00:00`
+- Action_ID: `ACT-USER-STANDING-AUTH-20261117-2344`
+- Stage_ID: `APPROVAL_SCOPE_EXTENSION`
+- Status: `USER_AUTHORIZED_UNTIL_EXPLICIT_END_OF_TODAYS_ACTIVITY`
+- SHA-256: `b33d8f47071299f814c9c4af035179360d35afe9696ca5251748143dfeea4f49`
