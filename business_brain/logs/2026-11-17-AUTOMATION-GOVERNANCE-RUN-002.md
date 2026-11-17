@@ -247,3 +247,41 @@ Scope=governance_only|no_project_execution|no_Wix_mutation|no_automation_state_c
 SHA-256: `694337d1ad7b5c042d42d114f50dce80e2d978f61c9eddb0282f18d69346547e`
 
 No Git tag was created; `core/verify_contract.py` was not run with PASS; no tag was pushed. No contract-seal, repository-wide verification or tag-publication claim is made.
+
+
+## 11. Final registry-field detail and handoff read-back
+
+The automation record schema exposes no separate `status` property on `latest_result`. The result is therefore recorded using run-ID matching, `created_at`, `completed_at`, `is_failure_message` and the corresponding `last_run.recorded_status`.
+
+| Layer | last_run_time | last_run | latest_result |
+|---|---|---|---|
+| Supervisor `Automation_148c65055034819188de8415b2349983` | `2026-11-17T05:38:50.240156+00:00` | `89a97f95-04f4-8320-a476-920d234ee290`; completed; scheduled `2026-11-17T05:00:00Z`; started `2026-11-17T05:23:40.409468Z`; completed `2026-11-17T05:38:48.251502Z` | run_id matches; created_at `2026-11-17T05:38:46.695461Z`; completed_at present; `is_failure_message=false`; delivery unknown |
+| Automation 3 `6af9e12b3c288191b4f487adbdeb0446` | `2026-11-16T06:27:54.518464+00:00` | `96575d0b-82f0-8330-9f7e-51838b0f9d33`; in_progress; scheduled `2026-11-17T05:30:00Z`; started `2026-11-17T06:04:46.688599Z`; completed_at null | run_id `eff13df8-d7fc-832a-bbb8-5404c8664bc1` does not match; created_at `2026-11-16T06:27:37.950969Z`; prior-run result, `is_failure_message=false`; not attributable to current run |
+| Automation 2 `6af9dfe86ba08191b148931561fd7774` | null | null | null; NO_RECORDED_RUN |
+
+Final exact-ID Automation 2 read-back:
+- enabled=true; daily 08:00 Asia/Jerusalem.
+- updated_at `2026-11-17T06:07:33.733178+00:00`; the immediate post-update read-back earlier showed `2026-11-17T06:07:12.662359+00:00`.
+- Old blanket production-Wix sentence absent; replacement present.
+- Exactly ten steps and the single cumulative queue remain present.
+- No run history was added.
+
+The handoff was updated with the same final run-state fields and fetched back:
+- Handoff update commit: `c98e7e3e247c8fcc27e6c8c4fb20875a1cbe6e60`.
+- Handoff blob after read-back: `25899b71b8b2d68205a8b4c54b1860ae157b16c6`.
+- Read-back confirmed the file contains the supplemental state section and hash.
+
+Supplemental state-detail signature payload:
+```text
+Timestamp=2026-11-17T08:16:58.855555+02:00
+Contract_Start_Time=2026-11-17T07:23:40.409468+02:00
+Action_ID=ACT-20261117-AI231-AUTOMATION3-GOVERNANCE-002-STATE-DETAILS-LOG
+Target=business_brain/logs/2026-11-17-AUTOMATION-GOVERNANCE-RUN-002.md
+Handoff=business_brain/handoffs/2026-11-17-AUTOMATION3-TO-AUTOMATION2.md|commit=c98e7e3e247c8fcc27e6c8c4fb20875a1cbe6e60|blob=25899b71b8b2d68205a8b4c54b1860ae157b16c6|readback=true
+Supervisor=Automation_148c65055034819188de8415b2349983|last_run_time=2026-11-17T05:38:50.240156+00:00|last_run_id=89a97f95-04f4-8320-a476-920d234ee290|completed|latest_result_id_matches=true
+Automation3=6af9e12b3c288191b4f487adbdeb0446|last_run_time=2026-11-16T06:27:54.518464+00:00|last_run_id=96575d0b-82f0-8330-9f7e-51838b0f9d33|in_progress|latest_result_id_mismatch=true
+Automation2=6af9dfe86ba08191b148931561fd7774|last_run_time=null|last_run=null|latest_result=null|NO_RECORDED_RUN
+Automation2_final_readback=enabled=true|daily=08:00 Asia/Jerusalem|updated_at=2026-11-17T06:07:33.733178+00:00|prompt_patch_present=true
+Scope=state_detail_only; no automation state change
+```
+SHA-256: `e1219d2553b91a74cb4e440e04f8fab26e8d8c7a88928a1c670becf86e6c0c9c`
