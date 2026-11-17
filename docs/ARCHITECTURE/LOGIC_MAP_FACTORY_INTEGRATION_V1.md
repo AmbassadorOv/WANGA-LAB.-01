@@ -2,7 +2,7 @@
 
 **Architecture ID:** WANGA-LOGIC-MAP-FACTORY-001  
 **Version:** 0.1.0  
-**Status:** SPECIFIED / REPOSITORY REGISTRATION IN PROGRESS  
+**Status:** PLUGIN CREATED / CANONICAL MAP REGISTERED / RUNTIME NOT CONNECTED  
 **Parent:** K — Lineage Knowledge & Governance  
 **Execution interface:** D — Research Execution Fabric  
 **Plugin ID:** `plugins_6afccd9edaf88191823ba5181aef89bc`  
@@ -115,10 +115,24 @@ Exact workbook contents, sheet names, ranges, formulas, and IDs must be inspecte
 |---|---|---|
 | Private plugin package | CREATED | Plugin Creator returned plugin ID and release ID |
 | Plugin source files | READ-BACK VERIFIED | Plugin file listing includes manifest, skill, and JSON schema |
-| WANGA integration contract | SPECIFIED | This document |
-| Canonical map registration | PENDING | Requires registry commit and read-back |
+| WANGA integration contract | COMMITTED | This document exists on the integration branch |
+| Canonical map registration | COMMITTED / READ-BACK VERIFIED | Registry row fetched from the integration branch |
 | Workbook content adapters | NOT IMPLEMENTED / SOURCE INSPECTION REQUIRED | No workbook bytes inspected in this action |
 | Logic-factory runtime connection | NOT CONNECTED | No runtime endpoint or integration test supplied |
 | Reshimu verifier invocation | NOT RUN | No PASS output in this action |
 
-Creation of the plugin must not be represented as a completed runtime integration.
+Creation of the plugin and registration of its architecture do not establish a completed runtime integration.
+
+## 8. Four-point action record
+
+**Action_ID:** `ACT-LOGIC-MAP-FACTORY-20261117-2155`  
+**Contract_Start_Time:** `2026-11-17T20:25:15+00:00`
+
+| Stage | Timestamp | Status | SHA-256 |
+|---|---|---|---|
+| REQUEST_ORIGIN | `2026-11-17T21:55:47+00:00` | CAPTURED | `290abbc398f626b18d15ce176a00f78fe46beabd33204c3faecd6247ac0ae771` |
+| MAP_RECEIVER | `2026-11-17T21:58:06+00:00` | REPOSITORY_READBACK_VERIFIED | `d2ab28ab280ea506500b92c530b561c283c8ff249a253e9ea1b1d5ff7feacbf2` |
+| APPROVAL_NODE | `2026-11-17T23:44:00+02:00` | STANDING_USER_AUTHORIZATION | `9e481c3ea0e70dd1110ed21b56bb0afea0086bc15aa89dd18b119eb12c577695` |
+| RETURN_TO_ORIGIN | PENDING | PENDING_FINAL_READBACK | PENDING |
+
+Each hash is SHA-256 over canonical UTF-8 JSON containing Timestamp, Contract_Start_Time, Action_ID, Stage_ID, Status, Source_Ref, Target_Ref, and Payload. The return stage will be recorded only after final readback; no timestamp is pre-assigned.
