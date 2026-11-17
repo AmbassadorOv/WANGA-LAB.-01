@@ -1,0 +1,106 @@
+flowchart LR
+  subgraph SRC["SOURCE REALM — מקור"]
+    BOOK["מילות ההיגיון · Warsaw 1928"]
+    GATES["14 שערי הספר"]
+    TERMS["175 רשומות / עניינים"]
+    APPEAR["הופעות, נוסחים ומיקומים"]
+    BOOK --> GATES --> TERMS
+    TERMS --> APPEAR
+  end
+
+  subgraph CORE["LOGIC-FIRST CORE — גרף מבני דינמי"]
+    EVID["Evidence & Provenance"]
+    NODE["רכיבים והופעות בהקשר"]
+    REL["יחסים עם כיוון והקשר"]
+    COMP["צירופים ותוצאות"]
+    CHANGE["שינויים וגרסאות"]
+    EVID --> NODE
+    NODE <--> REL
+    REL --> COMP
+    COMP --> CHANGE
+    CHANGE --> NODE
+  end
+
+  subgraph MAPS["MAP ARCHITECTURE — מיפוי הספר"]
+    C13["13 מפות פרקים עצמאיות"]
+    M14["מפה 14 אינטגרטיבית"]
+    T175["175 מפות עניינים"]
+    PAIRS["מרחב בדיקה: 30,625 זוגות סדורים כולל עצמי"]
+    C13 --> M14
+    T175 --> PAIRS
+    C13 <--> T175
+    M14 <--> T175
+  end
+
+  subgraph MOTION["DYNAMIC OPERATIONS — תנועות"]
+    SP["SPIRAL · התכנסות"]
+    VO["VORTEX · התפצלות"]
+    NAV["ניווט בין הקשרים"]
+    DIFF["השוואת גרסאות"]
+    SP <--> VO
+    NAV <--> DIFF
+  end
+
+  subgraph EXEC["EXECUTION & REPRESENTATION — הפעלה וייצוג"]
+    WANGA["WANGA-LAB"]
+    ORD["ARTIFICAL-LOGICAL-ORDERS"]
+    AGENT["agent-orchestrator"]
+    AI231["Project-AI231-Miorna / AI231.meta.io"]
+    QUALIA["Qualia"]
+    ROBOT["ROBOTICS_TRIPARTITA_Logos"]
+    FIG["Figma / FigJam"]
+    GD["GitDiagram"]
+    MER["Mermaid"]
+    APP["Workbench / AppDeploy"]
+  end
+
+  subgraph CONTROL["VALIDATION & GOVERNANCE — בקרה"]
+    STATUS["VERIFIED · DERIVED · HYPOTHESIS · UNRESOLVED · REJECTED"]
+    GUARD["DLP + Logic Executor + Ontological/Linguistic Precision"]
+    SYNC["Change Intake → Review → Versioned Sync"]
+    HALT["Drift / contradiction → STOP"]
+    GUARD --> STATUS
+    STATUS --> HALT
+    SYNC --> STATUS
+  end
+
+  APPEAR --> EVID
+  TERMS --> NODE
+  REL --> C13
+  COMP --> M14
+  CHANGE --> SYNC
+  SP --> NODE
+  VO --> NODE
+  NAV --> REL
+  DIFF --> CHANGE
+  WANGA --- CORE
+  ORD --- CORE
+  AGENT --- EXEC
+  AI231 --- EXEC
+  QUALIA --- EXEC
+  ROBOT --- EXEC
+  CORE --> MAPS
+  MAPS --> MOTION
+  MOTION --> EXEC
+  EXEC --> CONTROL
+  CONTROL --> CORE
+
+  classDef source fill:#183653,stroke:#7FE8FF,color:#ffffff;
+  classDef core fill:#123B55,stroke:#58D6C8,color:#ffffff;
+  classDef map fill:#1E3A66,stroke:#78B7FF,color:#ffffff;
+  classDef motion fill:#49346A,stroke:#C6A7FF,color:#ffffff;
+  classDef control fill:#493A22,stroke:#F4C66A,color:#ffffff;
+  class BOOK,GATES,TERMS,APPEAR source;
+  class EVID,NODE,REL,COMP,CHANGE core;
+  class C13,M14,T175,PAIRS map;
+  class SP,VO,NAV,DIFF motion;
+  class STATUS,GUARD,SYNC,HALT control;
+
+
+---
+
+**Action signature**  
+Timestamp: 2026-11-18T00:52:41+02:00  
+Contract_Start_Time: 2026-11-17T20:29:00+02:00 *(interpreted from the user's stated 20:29 local time in the immediately preceding logic session)*  
+Action_ID: LOGIC-META-MAP-001  
+SHA-256: 48cd421ed20653f7627fb24aa651d1a496fcee3b18bc607eb51ce3a880c32833
