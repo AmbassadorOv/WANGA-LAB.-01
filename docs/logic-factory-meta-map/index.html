@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Logic Factory — Dynamic Meta-Map</title>
+<style>
+:root{color-scheme:dark;--bg:#071321;--panel:#0d2034;--line:#31506d;--ink:#edf6ff;--muted:#9cb4c9;--cyan:#7fe8ff;--blue:#4e9ce8;--violet:#b99aff;--gold:#f3c66b;--green:#72d7b2}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0,#12345a 0,transparent 55%),var(--bg);color:var(--ink);font:15px/1.55 system-ui,sans-serif}
+header{padding:26px clamp(16px,4vw,48px);border-bottom:1px solid var(--line)}h1{margin:4px 0;font-size:clamp(25px,4vw,42px)}.sub,.muted{color:var(--muted)}main{max-width:1500px;margin:auto;padding:22px clamp(12px,3vw,36px)}
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.stat,.panel{background:linear-gradient(145deg,#102941,#0b1c2e);border:1px solid var(--line);border-radius:13px;padding:14px}.stat b{display:block;color:var(--cyan);font-size:26px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}button{background:#122c46;color:var(--ink);border:1px solid #42617e;border-radius:8px;padding:9px 13px;cursor:pointer}button.active{background:#1e4b73;border-color:var(--cyan)}
+.layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,.8fr);gap:14px}.canvas{min-height:620px;overflow:auto;background:linear-gradient(180deg,#091a2b,#081522);border:1px solid var(--line);border-radius:15px;padding:10px}
+svg{width:100%;min-width:780px;height:auto;display:block}.edge{stroke:#41617d;stroke-width:1.7;opacity:.72}.edge.dashed{stroke-dasharray:6 6;opacity:.5}.node{cursor:pointer}.node rect{stroke-width:1.5;rx:12}.node text{fill:#f2f8ff;font-size:13px;pointer-events:none}.node .small{fill:#b8cde0;font-size:10px}.node.selected rect{stroke:#fff;stroke-width:3}
+.src rect{fill:#153c57;stroke:var(--cyan)}.core rect{fill:#104451;stroke:var(--green)}.map rect{fill:#1b3e68;stroke:var(--blue)}.motion rect{fill:#3d2e5e;stroke:var(--violet)}.repo rect{fill:#283449;stroke:#8aa4bd}.guard rect{fill:#493b24;stroke:var(--gold)}
+.detail h2{margin-top:0;font-size:20px}.tag{display:inline-block;border:1px solid #486783;border-radius:30px;padding:2px 8px;font-size:11px;color:#b9d9f2;margin:2px}
+.links{display:grid;gap:8px}.links a{color:#a9d7ff;text-decoration:none;border-bottom:1px solid #294761;padding:5px 0}.links a:hover{color:#fff}
+.note{border-right:3px solid var(--gold);padding:8px 12px;background:#231f17;border-radius:5px;color:#f3dfb6}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header><div class="muted">WANGA-LAB · LOGIC FACTORY · META-ARCHITECTURE V1</div><h1>מפת־העל הדינמית של מפעל ההיגיון</h1><div class="sub">מבנה מקור · הופעות · יחסים · הרכבות · תנועות · ייצוגים · אימות · סנכרון</div></header>
+<main>
+<section class="stats">
+<div class="stat"><b>14</b>שערי המקור בספר</div><div class="stat"><b>175</b>רשומות מקור</div><div class="stat"><b>13 + 1</b>מפות פרקים + אינטגרציה</div><div class="stat"><b>30,625</b>זוגות סדורים מועמדים כולל עצמי</div><div class="stat"><b>8</b>מאגרים שסופקו למיפוי</div>
+</section>
+<nav id="views"><button class="active" data-view="all">מפת־על מלאה</button><button data-view="source">מקור ועניינים</button><button data-view="maps">13 + 1</button><button data-view="motion">תנועות</button><button data-view="ecosystem">אקוסיסטם</button><button data-view="control">אימות וסנכרון</button></nav>
+<div class="layout"><section class="canvas"><svg id="map" viewBox="0 0 1120 760" role="img" aria-label="Dynamic Logic Factory meta architecture"></svg></section><aside class="panel detail" id="detail"><h2>מפת־על חיה</h2><p>בחר רכיב במפה כדי לראות את תפקידו, גבולותיו ומצב האימות שלו.</p><span class="tag">DYNAMIC GRAPH</span><span class="tag">SOURCE-FIRST</span><span class="tag">MULTI-PARADIGM</span></aside></div>
+<section class="panel" style="margin-top:14px"><h2>גבולות שאסור למפה למחוק</h2><div class="note">14 שערי הספר אינם 13 מפות הפרקים + מפה 14. אלה שני צירים שונים. מפה 14 של המוצר מאחדת את 13 מפות הפרקים; שער 14 נשאר שער המקור.</div><p>30,625 הוא מרחב של 175 × 175 זוגות סדורים כולל זוגות עצמיים. הוא אינו מספר קשרים מוכחים. ללא זוגות עצמיים: 30,450 זוגות סדורים; זוגות לא־סדורים ללא עצמי: 15,225.</p><p>קשר בין שני רכיבים נשאר מועמד עד שיש לו הופעה, הקשר, סוג יחס וראיה. תפקיד של מונח נשמר לפי הופעתו ואינו מועתק אוטומטית לכל הופעה אחרת.</p></section>
+<section class="panel" style="margin-top:14px"><h2>קישורי עבודה</h2><div class="links">
+<a href="https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/LOGIC_FACTORY_META_ARCHITECTURE_V1.md">מפרט מפת־העל ב-GitHub</a>
+<a href="https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/docs/LOGIC_FACTORY_META_ARCHITECTURE_V1.mmd">קובץ Mermaid</a>
+<a href="https://www.figma.com/board/kXQZzMYtFLUZyBSmwUprb2/AI-Logic-Factory-%E2%80%94-Top-Level-Architecture-Map?node-id=0-1">מפת FigJam האינטראקטיבית</a>
+<a href="https://github.com/AmbassadorOv/WANGA-LAB.-01/blob/main/milaot-hahigayon/INDEX.md">אינדקס 175 הרשומות ו-14 שערי המקור</a>
+<a href="https://headless-jhbcjnxnldu-beywolf5-1408.wix-site-host.com/logic-corpus-atlas.html">Logic Corpus Atlas</a>
+</div></section>
+<footer class="muted" style="padding:18px 4px;font-size:12px">V1 — שכבת מיפוי ראשונית. מיפויי הקוד של המאגרים, חיבורי API והפעלת סנכרון אוטומטי עדיין טעונים בדיקת קבצים ומימוש.</footer>
+</main>
+<script>
+const nodes=[
+{id:"source",x:430,y:24,w:260,h:70,c:"src",title:"SOURCE REALM",sub:"מילות ההיגיון · 14 שערים · 175 עניינים",desc:"עוגן המקור: מהדורת ורשה 1928, נוסח, מיקום, שער והופעה. אינדקס אינו אימות ציטוט."},
+{id:"appear",x:65,y:150,w:230,h:76,c:"src",title:"הופעות והקשרים",sub:"מיקום מדויק · נוסח · הקשר",desc:"כל הופעה היא הקשר מסוים של עניין. אין למזג הופעות או להעתיק תפקיד מהופעה אחת לאחרת ללא ראיה."},
+{id:"terms",x:430,y:150,w:260,h:76,c:"src",title:"175 רשומות מקור",sub:"001–175 · 14 שערי מקור",desc:"175 הרשומות נשמרות עם מספר, שער, שם, מקור וקישור לרשומה הפרטנית."},
+{id:"evidence",x:795,y:150,w:250,h:76,c:"guard",title:"Evidence & Provenance",sub:"מקור · ראיה · גרסה · סטטוס",desc:"מנגנון העקיבות שמחבר כל טענה למקור, מיקום, גרסה ובדיקת אימות."},
+{id:"graph",x:385,y:300,w:350,h:105,c:"core",title:"DYNAMIC LOGIC GRAPH",sub:"הופעות · תפקידים · יחסים · צירופים · תוצאות",desc:"הגרף המרכזי הוא רשומת המבנה המשותפת. הוא אינו עץ סטטי ואינו מניח שכל קשר קיים מראש."},
+{id:"relation",x:65,y:325,w:230,h:76,c:"core",title:"Relation Assertions",sub:"כיוון · הקשר · ראיה",desc:"קשר נשמר עם סוגו, כיוונו, ההקשר שבו הוא חל, הראיה והסטטוס. קשר לא מבוסס נשאר מועמד."},
+{id:"composition",x:825,y:325,w:230,h:76,c:"core",title:"Compositions & Operations",sub:"הרכבה · פעולה · תוצאה",desc:"צירוף ופעולה נשמרים בנפרד: קלטים, תנאי הרכבה, פעולה, פלט ותיעוד."},
+{id:"maps",x:385,y:485,w:350,h:88,c:"map",title:"13 CHAPTER MAPS + MAP 14",sub:"13 עצמאיות · 1 אינטגרטיבית",desc:"13 מפות פרקים שומרות את תחומן המקומי. מפה 14 מחברת ביניהן. אין לזהות את מפה 14 עם שער 14 בספר."},
+{id:"termsmaps",x:65,y:500,w:230,h:76,c:"map",title:"175 TERM MAPS",sub:"מפה לכל רשומה · הקשר לכל הופעה",desc:"מפות 175 העניינים מקושרות למפות הפרקים ולמקורות. אין כאן טענה שכל היחסים כבר הוכחו."},
+{id:"motion",x:825,y:500,w:230,h:76,c:"motion",title:"SPIRAL ↔ VORTEX",sub:"התכנסות ↔ התפצלות",desc:"SPIRAL מאחד רק לאחר בדיקת התאמה; VORTEX מפצל להקשרים ותתי-בדיקות בלי למחוק את המבנה המקורי."},
+{id:"ecosystem",x:385,y:635,w:350,h:76,c:"repo",title:"REPOSITORY & TOOL ECOSYSTEM",sub:"WANGA · AI231 · Qualia · Orchestrator · Robotics",desc:"שמונה מאגרים שסופקו הם צמתים באקוסיסטם. תלות טכנית או API ביניהם עדיין אינה מוכחת."},
+{id:"control",x:825,y:635,w:230,h:76,c:"guard",title:"VALIDATION & SYNC",sub:"DLP · Logic Executor · Change Intake",desc:"כלל חדש נכנס כהצעת שינוי: סיווג מקור, בדיקת סתירות, אימות, גרסה, ואז סנכרון מושפע בלבד."}
+];
+const edges=[["source","terms"],["source","appear"],["terms","graph"],["appear","evidence"],["evidence","graph"],["relation","graph"],["graph","composition"],["graph","maps"],["terms","termsmaps"],["maps","termsmaps"],["maps","motion"],["motion","graph"],["ecosystem","graph"],["control","evidence"],["control","graph"]];
+const groups={all:new Set(nodes.map(n=>n.id)),source:new Set(["source","appear","terms","evidence","graph"]),maps:new Set(["maps","termsmaps","source","terms","graph"]),motion:new Set(["motion","graph","maps","relation","composition"]),ecosystem:new Set(["ecosystem","graph","maps","motion"]),control:new Set(["control","evidence","graph","source","terms"])};
+const svg=document.getElementById("map"),detail=document.getElementById("detail");
+function render(view="all",selected="graph"){const visible=groups[view]||groups.all;let out="";for(const [a,b] of edges){if(visible.has(a)&&visible.has(b)){const A=nodes.find(n=>n.id===a),B=nodes.find(n=>n.id===b);out+=`<path class="edge" d="M ${A.x+A.w/2} ${A.y+A.h/2} L ${B.x+B.w/2} ${B.y+B.h/2}" fill="none"/>`}}for(const n of nodes){if(!visible.has(n.id))continue;out+=`<g class="node ${n.c} ${selected===n.id?"selected":""}" data-id="${n.id}"><rect x="${n.x}" y="${n.y}" width="${n.w}" height="${n.h}"/><text x="${n.x+n.w/2}" y="${n.y+29}" text-anchor="middle">${n.title}</text><text class="small" x="${n.x+n.w/2}" y="${n.y+51}" text-anchor="middle">${n.sub}</text></g>`}svg.innerHTML=out;svg.querySelectorAll(".node").forEach(el=>el.addEventListener("click",()=>show(el.dataset.id,view)));}
+function show(id,view="all"){const n=nodes.find(x=>x.id===id);if(!n)return;render(view,id);detail.innerHTML=`<h2>${n.title}</h2><p>${n.desc}</p><span class="tag">${n.c.toUpperCase()}</span><span class="tag">SOURCE-AWARE</span><p class="muted">רכיב במפת־העל · סטטוס חיבור: לפי ראיות המפרט, לא לפי מיקום חזותי.</p>`;}
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.view);detail.innerHTML="<h2>תצוגת "+b.textContent+"</h2><p>התצוגה מסננת את אותו גרף; היא אינה יוצרת מבנה חדש.</p>"}));
+render();
+</script>
+</body></html>
+
+<!-- Action signature: Timestamp=2026-11-17T22:53:22.453Z | Contract_Start_Time=2026-11-17T20:29:00+02:00 | Action_ID=LOGIC-META-MAP-002 | SHA-256=c12b6e50215b1ca5bc6a6a9e2caf7f787c3ca5c02feec69ceacb4bec9b631392 -->
