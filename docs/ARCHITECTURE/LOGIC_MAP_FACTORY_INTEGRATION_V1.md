@@ -117,6 +117,7 @@ Exact workbook contents, sheet names, ranges, formulas, and IDs must be inspecte
 | Plugin source files | READ-BACK VERIFIED | Plugin file listing includes manifest, skill, and JSON schema |
 | WANGA integration contract | COMMITTED | This document exists on the integration branch |
 | Canonical map registration | COMMITTED / READ-BACK VERIFIED | Registry row fetched from the integration branch |
+| Governance registration | COMMITTED / READ-BACK VERIFIED | Governance section 8 fetched from the integration branch |
 | Workbook content adapters | NOT IMPLEMENTED / SOURCE INSPECTION REQUIRED | No workbook bytes inspected in this action |
 | Logic-factory runtime connection | NOT CONNECTED | No runtime endpoint or integration test supplied |
 | Reshimu verifier invocation | NOT RUN | No PASS output in this action |
@@ -131,8 +132,19 @@ Creation of the plugin and registration of its architecture do not establish a c
 | Stage | Timestamp | Status | SHA-256 |
 |---|---|---|---|
 | REQUEST_ORIGIN | `2026-11-17T21:55:47+00:00` | CAPTURED | `290abbc398f626b18d15ce176a00f78fe46beabd33204c3faecd6247ac0ae771` |
-| MAP_RECEIVER | `2026-11-17T21:58:06+00:00` | REPOSITORY_READBACK_VERIFIED | `d2ab28ab280ea506500b92c530b561c283c8ff249a253e9ea1b1d5ff7feacbf2` |
+| MAP_RECEIVER | `2026-11-17T21:59:07+00:00` | REPOSITORY_READBACK_VERIFIED | `d66899e2f4ab4f56d69981042b05199c21f3b23e00e8de30b789d1796480a276` |
 | APPROVAL_NODE | `2026-11-17T23:44:00+02:00` | STANDING_USER_AUTHORIZATION | `9e481c3ea0e70dd1110ed21b56bb0afea0086bc15aa89dd18b119eb12c577695` |
-| RETURN_TO_ORIGIN | PENDING | PENDING_FINAL_READBACK | PENDING |
+| RETURN_TO_ORIGIN | `2026-11-17T21:59:14+00:00` | RESULT_RETURNED | `539aefab4397cee0f90d52c851cfb6a74ca8e001d56a440d1005d2bc217e9f0a` |
 
-Each hash is SHA-256 over canonical UTF-8 JSON containing Timestamp, Contract_Start_Time, Action_ID, Stage_ID, Status, Source_Ref, Target_Ref, and Payload. The return stage will be recorded only after final readback; no timestamp is pre-assigned.
+Each hash is SHA-256 over canonical UTF-8 JSON containing Timestamp, Contract_Start_Time, Action_ID, Stage_ID, Status, Source_Ref, Target_Ref, and Payload.
+
+## 9. Repository write evidence
+
+| File | Commit |
+|---|---|
+| `docs/ARCHITECTURE/LOGIC_MAP_FACTORY_INTEGRATION_V1.md` initial creation | `13273a8cc9464c75322553ade83999fe20fd2093` |
+| `GLOBAL_ARCHITECTURE_REGISTRY.md` registration | `c292a8c0ca4fd2e9fa9c9c299c46375aa447ba15` |
+| Integration contract and audit stages | `080ca82a34cf3a6f31fd6c23879815ca8311eb03` |
+| `docs/ARCHITECTURE/LOGICAL_MAP_GOVERNANCE_V1.md` admission | `0c4bf62b6d2b46f9f8edbba53bfd6f5e6b2afed6` |
+
+The three canonical files were fetched from branch `integration/alf-logical-orders-20261117`. Read-back confirmed the plugin ID and map registration. No tag, contract verifier PASS, or tag push was performed.
