@@ -1,7 +1,7 @@
 # WANGA-LAB — Canonical Global Architecture Registry
 
 Status: ARCHITECTURE BASELINE
-Version: 0.2.2
+Version: 0.2.3
 
 ## Purpose
 
@@ -145,6 +145,7 @@ GLOBAL SCIENCE NETWORK
 | WANGA Politeia | `docs/ARCHITECTURE/WANGA_POLITEIA.md` | BUILDING | K Lineage Knowledge & Governance |
 | Vitruvius Orchestrator | `docs/ARCHITECTURE/VITRUVIUS_ORCHESTRATOR_ARCHITECTURE.md`, `docs/ARCHITECTURE/VITRUVIUS_ORCHESTRATOR_ARCHITECTURE.ASCII.txt` | SPECIFICATION | M Meta-Architecture / Vitruvius |
 | Logical Map Governance | `docs/ARCHITECTURE/LOGICAL_MAP_GOVERNANCE_V1.md` | SPECIFIED / IMPLEMENTATION NOT YET VERIFIED | K Lineage Knowledge & Governance; interface to D Research Execution Fabric |
+| Logic Map Factory | `docs/ARCHITECTURE/LOGIC_MAP_FACTORY_INTEGRATION_V1.md`; private plugin `plugins_6afccd9edaf88191823ba5181aef89bc` | PLUGIN CREATED / INTEGRATION SPECIFIED / RUNTIME NOT CONNECTED | K Governance; interface to D Research Execution Fabric |
 
 ## Existing research-domain architectures
 
@@ -237,7 +238,6 @@ Every new architecture added to WANGA-LAB must declare:
 
 This makes the architecture extensible without allowing new names to become disconnected systems.
 
-
 ## Application Surface — Vitruvius Architect
 
 The first UI prototype for the Vitruvius meta-architecture is located at:
@@ -245,7 +245,6 @@ The first UI prototype for the Vitruvius meta-architecture is located at:
 `apps/vitruvius-architect/`
 
 It presents lineage trees, architecture families, WANGA Politeia, model selection, the Rational Logic boundary, architecture components, and provenance state. It is a PROTOTYPED artifact and is not yet runtime-verified.
-
 
 ## Mandatory logical-map admission and synchronization
 
