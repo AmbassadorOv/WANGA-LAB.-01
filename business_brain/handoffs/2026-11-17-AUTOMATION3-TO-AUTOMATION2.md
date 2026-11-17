@@ -223,3 +223,35 @@ Scope=governance_handoff_only; no project execution; no Wix mutation
 SHA-256: `801d7823ecae3a30f8282e960e99eadaabcdd6df45bac9c892e3f6effc7521fb`
 
 The handoff was created after the 08:00 Automation 2 slot; the timing requirement is BLOCKED for this cycle. No manual execution was initiated.
+
+
+## 11. Final registry-field detail and post-write prompt read-back
+
+The automation record exposes no separate `status` property on `latest_result`; its result state is therefore recorded using the available run status, `completed_at`, `is_failure_message`, run-ID match and timestamp comparison.
+
+| Layer | last_run_time | last_run | latest_result |
+|---|---|---|---|
+| Supervisor `Automation_148c65055034819188de8415b2349983` | `2026-11-17T05:38:50.240156+00:00` | `89a97f95-04f4-8320-a476-920d234ee290`; completed; scheduled `2026-11-17T05:00:00Z`; started `2026-11-17T05:23:40.409468Z`; completed `2026-11-17T05:38:48.251502Z` | run_id matches; created_at `2026-11-17T05:38:46.695461Z`; completed_at present; `is_failure_message=false`; no separate result-status field; delivery unknown |
+| Automation 3 `6af9e12b3c288191b4f487adbdeb0446` | `2026-11-16T06:27:54.518464+00:00` | `96575d0b-82f0-8330-9f7e-51838b0f9d33`; in_progress; scheduled `2026-11-17T05:30:00Z`; started `2026-11-17T06:04:46.688599Z`; completed_at null | run_id `eff13df8-d7fc-832a-bbb8-5404c8664bc1` does not match; created_at `2026-11-16T06:27:37.950969Z`; prior-run result, `is_failure_message=false`; not attributable to current run |
+| Automation 2 `6af9dfe86ba08191b148931561fd7774` | null | null | null; NO_RECORDED_RUN |
+
+Final exact-ID Automation 2 read-back after the prompt patch and file creation:
+- enabled=true; daily 08:00 Asia/Jerusalem.
+- updated_at: `2026-11-17T06:07:33.733178+00:00` (the immediate post-update read-back earlier showed `2026-11-17T06:07:12.662359+00:00`).
+- Old blanket production-Wix sentence absent; replacement present.
+- Exactly ten steps and single cumulative queue still present.
+- No run history was added; Automation 2 remains NO_RECORDED_RUN.
+
+Supplemental state-detail signature payload:
+```text
+Timestamp=2026-11-17T08:16:25.225082+02:00
+Contract_Start_Time=2026-11-17T07:23:40.409468+02:00
+Action_ID=ACT-20261117-AI231-AUTOMATION3-GOVERNANCE-002-STATE-DETAILS-HANDOFF
+Target=business_brain/handoffs/2026-11-17-AUTOMATION3-TO-AUTOMATION2.md
+Supervisor=Automation_148c65055034819188de8415b2349983|last_run_time=2026-11-17T05:38:50.240156+00:00|last_run_id=89a97f95-04f4-8320-a476-920d234ee290|recorded_status=completed|latest_result_run_id_matches=true|latest_result_created_at=2026-11-17T05:38:46.695461Z|is_failure_message=false
+Automation3=6af9e12b3c288191b4f487adbdeb0446|last_run_time=2026-11-16T06:27:54.518464+00:00|last_run_id=96575d0b-82f0-8330-9f7e-51838b0f9d33|recorded_status=in_progress|latest_result_run_id=eff13df8-d7fc-832a-bbb8-5404c8664bc1|latest_result_created_at=2026-11-16T06:27:37.950969Z|run_id_mismatch=true
+Automation2=6af9dfe86ba08191b148931561fd7774|last_run_time=null|last_run=null|latest_result=null|NO_RECORDED_RUN
+Automation2_final_readback=enabled=true|daily=08:00 Asia/Jerusalem|updated_at=2026-11-17T06:07:33.733178+00:00|old_sentence_absent=true|replacement_present=true|exactly_10_steps=true|single_queue=true
+Scope=registry_state_detail_only; no automation state change
+```
+SHA-256: `167f603f80cdc760212b912df47371253f604953211caf468dbde731ca41b095`
