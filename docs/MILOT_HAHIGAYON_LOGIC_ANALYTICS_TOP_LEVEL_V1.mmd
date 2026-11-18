@@ -1,0 +1,17 @@
+flowchart LR
+  SRC["Primary sources: Saadia Gaon Treatise II opening; Milot HaHigayon Warsaw 1928"] --> LEDGER["Immutable source ledger"]
+  LEDGER --> APP1["App 1: Logic Analytics Orchestrator"]
+  APP1 --> ANALYTICS["Invariant analytical units"]
+  WANGA["WANGA registry: 175 terms / 14 gates"] --> MATRIX["2,450 candidate cells / 4,900 directional checks"]
+  ANALYTICS --> MATRIX
+  MATRIX --> APP2["App 2: Claim & Balance Validator"]
+  APP2 --> MAPS["Forward and reverse mappings"]
+  MAPS --> APP3["App 3: Error Prevention & Balance Guard"]
+  APP3 --> PROV["Provenance, drift, contradiction and balance receipts"]
+  PROV --> GRAPH["Versioned dynamic graph"]
+  GRAPH --> MASTER["Master Plugin v0.2.1"]
+  MASTER --> AGENTS["Bounded specialist agents"]
+  AGENTS --> APP1
+  AGENTS --> APP2
+  AGENTS --> APP3
+  TOOLS["GitHub · Airtable · AppDeploy · Figma · GitDiagram · Canva"] -. "registered tool surfaces" .-> GRAPH
